@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head> <!-- CSS libraries go in here -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/style.css" rel="stylesheet" />
+        <title> Smit Kapadia's Website </title>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <!-- Div allows for the name and menu to be in-line -->
+        <nav class="navbar">
+        
+            <div class="name">
+                <text> Smit Kapadia </text>
+            </div>
+        
+            <div class="menu">
+                <ul class="list">
+                    <li class="list-items"> <a href="about-page.html"> About Me </a></li>
+                    <li class="list-items"> <a href="engineering-portfolio.html"> Engineering </a></li>
+                    <li class="list-items"> <a href="photography.html"> Photography </a></li>
+                    <li class="list-items"> <a href="short-films.html"> Short Films </a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="project">
+            <div class="project-description">
+                <h1> Purdue Space Program: Upper Strut FEA </h1>
+                    <h2 class="subtitle"> (Jan - July 2022) </h2>
+                    <h3> Bolt hole stresses </h3>  
+
+                    <!-- Elaborate description with bullet points -->
+                    <p> For the FEM of upper airframe struts, I improved the mesh and bolt contact modeling, as well as conducted a mesh convergence study.
+                        Sharp transitions of tetrahedral mesh elements at the bolt holes led to unrealistically high stresses, giving a Safety Margin less than zero. To resolve this,
+                        I refined the mesh around bolt holes using a Sphere of Influence control and non-linear material properties. Additionally, I experimented with different bolt
+                        diameters and strut flange thicknesses to reduce stress concentrations. Lastly, I validated stress in vicinity of bolt holes with hand calculations.
+                    </p>
+                    <h3> Mesh convergence </h3>  
+                    <p> To ensure FEA results were not biased on mesh density, I conducted a mesh convergence study. The plots show how max Von Mises and bolt hole
+                        stresses converge to within +/- 500 psi, which was an acceptable margin by the team due to stresses being decently lower than material (Aluminum) yield stress.
+                        From this, I learned how to have finer mesh in areas of high stress concentrations, with relatively coarser mesh in other areas to manage computational expense efficiently.
+                    </p>
+            </div>
+            
+            <!-- Add a white scanned pic for below -->
+            <div class="small-projects-img-grid">
+                <figure> 
+                    <img src="images/psp/strut-mesh_2.jpg" class="project-img-2" alt="Strut mesh">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Strut Front view: Refined mesh around bolt holes  </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/psp/bolt-hole-stresses.jpg" class="stress-img" alt="Stress concentrations">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Stress concentrations at bolt holes </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/psp/mesh-converge-upper-stress.jpg" class="project-img-2" alt="Mesh convergence">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Von Mises stress vs. element count </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/psp/mesh-converge-upper-bolt-hole-stress.jpg" class="project-img-2" alt="Mesh convergence">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Bolt hole stress vs. element count </figcaption>
+                </figure>
+            </div>
+        </div>
+    </body>
+</html>

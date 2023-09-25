@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head> <!-- CSS libraries go in here -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/style.css" rel="stylesheet" />
+        <title> Smit Kapadia's Website </title>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <!-- Div allows for the name and menu to be in-line -->
+        <nav class="navbar">
+        
+            <div class="name">
+                <text> Smit Kapadia </text>
+            </div>
+        
+            <div class="menu">
+                <ul class="list">
+                    <li class="list-items"> <a href="about-page.html"> About Me </a></li>
+                    <li class="list-items"> <a href="engineering-portfolio.html"> Engineering </a></li>
+                    <li class="list-items"> <a href="photography.html"> Photography </a></li>
+                    <li class="list-items"> <a href="short-films.html"> Short Films </a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="project">
+            <div class="project-description">
+                <h1> Ansys: Meshing Intern </h1>
+                    <h2 class="subtitle"> (Aug - Dec 2023) </h2>
+                            
+                    <h3> Automation for testing Mesh algorithm </h3>
+                        <p> One of my first projects at Ansys was to automate tests of the Axisymmetric meshing algorithm using a Python script. Normally, a user
+                            would manually load the tests and check if modifications to default mesh settings were needed.
+                            To make this process significantly efficient, I wrote a Python script which detects mesh nodes, computes how well they
+                            conform to the geometry's circumference, and modifies mesh settings accordingly. This saved time by 10+ hours for testing 1000+ cases,
+                            and improved test quality by ensuring the mesh was optimized for each geometry (by chekcs on element aspect ratio and Axisymmetric sweep
+                            number of divisions).
+                        </p>
+            </div>
+
+            <div class="project-img-grid">
+                <figure> 
+                    <img src="images/ansys-nodes.jpg" class="slender-img" alt="Mesh nodes">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Nodes for Axisymmetric sweep meshing </figcaption>
+                </figure>
+            </div>
+        </div>
+    </body>
+</html>

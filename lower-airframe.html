@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head> <!-- CSS libraries go in here -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/style.css" rel="stylesheet" />
+        <title> Smit Kapadia's Website </title>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <!-- Div allows for the name and menu to be in-line -->
+        <nav class="navbar">
+        
+            <div class="name">
+                <text> Smit Kapadia </text>
+            </div>
+        
+            <div class="menu">
+                <ul class="list">
+                    <li class="list-items"> <a href="about-page.html"> About Me </a></li>
+                    <li class="list-items"> <a href="engineering-portfolio.html"> Engineering </a></li>
+                    <li class="list-items"> <a href="photography.html"> Photography </a></li>
+                    <li class="list-items"> <a href="short-films.html"> Short Films </a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="project">
+            <div class="project-description">
+                <h1> Purdue Space Program: Lower Airframe Responsible Engineer </h1>
+                    <h2 class="subtitle"> (Jan - July 2023) </h2>
+
+                    <h3> Introduction </h3>
+                        <p> As the Responsible Engineer, I owned the design, analysis and integration of the lower airframe in the Structures Team.
+                            I managed and guided a team of 2-3 engineers to CAD components and carry out stress hand calculations. Additionally, this
+                            position pushed me to communicate design and functional intent of parts with other sub-teams (Fluids and Avionics), and iterate design
+                            for smooth integration. </p>
+                            
+                    <h3> Design </h3>
+                        <p> I chose an assymmetric T-cross-section for the strut (vertical structural member) to allow for panel attachment on both sides, and fin attachment to the web.
+                            For fin design, I optimized dimensions (root and tip chord, thickness, span) for stability margin off-the-rail using RASAero (open source 6DOF simulator),
+                            and critical flutter velocity (for which, I used safety factor of 1.5x Max Mach). The strut length was driven by fin root chord and plumbing length in lower airframe.
+                        </p>
+                    <h3> Analysis </h3>
+                        <p> I determined safety factors for max stress (compressive + bending), flexural and torsional buckling through hand calculations. I optimized the strut's cross-sectional
+                            dimensions for reducing mass, with the constraints of having at least a safety factor of 1.5 under axial stress, 2.0 under bending stress and 5.0 in buckling. 
+                             <br> <br> 
+                            
+                            Next, I created a FEM <i> (Finite Element Model) </i> of the struts in ANSYS to determine the Von Mises Stress distribution and Buckling safety factors. 
+                            The bolts were modeled as cylinders to reduce the simulation's computational cost. I conducted a mesh convergence study to ensure FEA results were not biased to mesh density,
+                            and validated results with hand calculations. </p>
+                    <h3> Integration </h3>  
+                    <p>
+                        Since the lower airframe houses fluid systems (tubing, valves, Quick Disconnect ports, etc) and avionics equipment, I worked closely with
+                        responsible engineers on these teams to allow for ease of access and handling. For example, I ensured the strut thickness was optimized for
+                        wrench clearances (for plumbing work), and minimal edge distance for avionics mounting bolt holes, resulting in decent mass savings. <br> <br>
+                        
+                        Moreover, I created engineering drawings of the struts and fins, applying GD&T principles. Leveraging datum planes, I applied tighter tolerances on strut tab straightness
+                        and fin surface flatness to meet fin misalignment requirements for the rocket's maximum roll rate (driven by avionics IMU). I also used material modifiers (specifically, MMC) 
+                        for clearance holes at interfaces (strut to tank bulkhead and strut to fin) to allow for bonus tolerancing. I loved learning about how tolerancing and datum planes can be leveraged
+                        to convey the part's functional intent to machinists! </p>
+                    
+                    <h3> Manufacturing </h3>
+                    <p> Embracing Design For Manufacturing, I accounted for end mill tool radius when minimizing space between the fin tab and panel mounting holes on the struts.                        
+                        For the fins, after making preliminary CAM <i> (Computer Aided Manufacturing) </i> in Fusion 360, I realized that having the leading and trailing edges protrude from the fin tab 
+                        would be better for the chamfer tool to clear the tip, as opposed to those edges being within the fin tab boundary.
+                    </p>
+            </div>
+
+            <!-- Update strut pics with yellow arrows -->
+
+            <div class="project-img-grid">
+                <figure> 
+                    <img src="images/psp/strut-fin-attachment.jpg" class="project-img-2" alt="Strut and Fin assembly">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Strut and Fin assembly </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/psp/strut-assem-cross-sec.jpg" class="project-img" alt="Strut cross-section">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Strut assembly side view </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/psp/strut_mesh.jpg" class="project-img" alt="Strut Mesh">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Strut mesh </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/psp/lower-struts-buckling.jpg" class="slender-img" alt="Torsional buckling mode">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Torsional Buckling Mode </figcaption>
+                </figure>
+
+                <!-- Add links to new page with full-screen engineering drawings -->
+                <figure>
+                    <img src="images/psp/strut-drawing.jpg" class="engineering-drawing" alt="Strut drawing">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Strut drawing </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/psp/fin-drawing.jpg" class="engineering-drawing" alt="Fin drawing">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Fin drawing </figcaption>
+                </figure>
+            </div>
+        </div>
+    </body>
+</html>

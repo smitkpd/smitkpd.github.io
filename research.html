@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head> <!-- CSS libraries go in here -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/style.css" rel="stylesheet" />
+        <title> Smit Kapadia's Website </title>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <!-- Div allows for the name and menu to be in-line -->
+        <nav class="navbar">
+        
+            <div class="name">
+                <text> Smit Kapadia </text>
+            </div>
+        
+            <div class="menu">
+                <ul class="list">
+                    <li class="list-items"> <a href="about-page.html"> About Me </a></li>
+                    <li class="list-items"> <a href="engineering-portfolio.html"> Engineering </a></li>
+                    <li class="list-items"> <a href="photography.html"> Photography </a></li>
+                    <li class="list-items"> <a href="short-films.html"> Short Films </a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="project">
+            <div class="project-description">
+                <h1> Micro Gas Turbine Research Project </h1>
+                    <h2 class="subtitle"> (May - July 2023) </h2>
+
+                    <h3> Introduction </h3>
+                        <p> In Summer 2023, I conducted undergraduate research, as part of Purdue <a href="https://engineering.purdue.edu/Engr/Research/EURO/students/about-SURF" class="hyperlink" target="blank"> SURF. </a> 
+                            I designed the electronics setup of and integrated 3-axis accelerometers for a Micro Gas Turbine engine to measure vibrations during testing. Additionally, I machined
+                            a shaft, compressor cap and engine mounting plate on CNC mills and lathes. I also procured testing hardware (bolts, mounting brackets,
+                            thermocouples, etc) and played an active role in engine assembly. </p>
+                    <h3> Vibration measurement </h3>
+                        <p> Vibration environment for aircraft engines has been extensively analyzed, however, not much literature exists for micro gas turbine (MGT) 
+                            engines. For this reason, I chose to characterize how resonant frequencies change with air-fuel equivalence ratio. I procured 3-Axis 
+                            accelerometers, soldered and connected them to an Arduino for reading acceleration values. I also prepared a MATLAB script to post-process the data 
+                            and identify resonant frequencies using FFT (Fast Fourier Transform). <br> <br>
+
+                            Although, our group couldn’t conduct testing with fuel (due to issues related to fit and tolerancing of components), I validated data 
+                            collection from the accelerometers during initial engine tests.
+                            </p>
+                    <h3> Machining </h3>
+                        <div class="specifics"> 
+                            <p> <span style="color: whitesmoke"> <b>Shaft:</b> </span> I machined the engine shaft with a peer mentor at Purdue’s BIDC. The tight diameter tolerance and square flat profile 
+                                <span style="color: rgb(7, 178, 116)"> (Figure X) </span> made this one of my biggest machining challenges. I had to repeatedly measure the 
+                                shaft diameter and adjust the CAM <i>(Computer Aided Machining)</i> program to achieve the desired diameter. Moreover, I carried out multiple lathe 
+                                operations to machine the shaft shoulders, as a high aspect ratio (length / diameter) stock would vibrate during machining. 
+                                I used a 2-Axis CNC Mill to machine the flat surfaces, with an end mill. </p>
+
+                                <p> <span style="color: whitesmoke"> <b>Compressor Cap:</b> </span>This component prevents axial movement of the turbine during operation. 
+                                    I machined the base profile on a CNC lathe using cylindrical stock. In my first attempt of machining the hex features (for wrench grip during assembly), I had 
+                                    excess stock – which made the part very unstable on vice grips in a CNC Mill. For my second attempt, I used smaller stock and secured it in a chuck on a 5-Axis 
+                                    CNC Mill. I learned that the latter was significantly faster.</p>
+                        </div>
+            </div>
+
+            <div class="project-img-grid">
+                <figure> 
+                    <img src="images/Research/accel_1.jpg" class="project-img" alt="Accelerometer mounting">
+                    <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Accelerometer mounting </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/Research/accel_electronics.jpg" class="project-img" alt="Wind Tunnel Gantry Manufacturing">
+                    <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Accelerometer wires connected to breadboard </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/Research/shaft_lathe_op.jpg" class="project-img" alt="Shaft lathe operation">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Shaft lathe operation </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/Research/finished_shaft_1.jpg" class="project-img" alt="Finished shaft">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Finished shaft </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/Research/compressor_cap_5_axis.png" class="project-img" alt="Compressor Cap 5-Axis CAM">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Compressor Cap 5-Axis CAM </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/Research/comp_cap_2.jpg" class="project-img" alt="Finished compressor cap">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Finished compressor cap </figcaption>
+                </figure>
+
+                <figure>
+                    <video controls="controls" width="576" height="720">
+                        <source src="images/Research/shaft-lathe-1.mp4" type="video/mp4" /> 
+                    </video>
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Machining shaft profile on CNC Lathe </figcaption>
+                </figure>   
+
+                <figure>
+                    <video controls="controls" width="576" height="720">
+                        <source src="images/Research/shaft-op2.mp4" type="video/mp4" />
+                    </video>
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Machining shaft's flat surfaces on 2-Axis CNC Mill </figcaption>
+                </figure>
+
+                <!-- Add pic of turbo assembly below text -->
+
+            </div>
+        </div>
+    </body>
+</html>

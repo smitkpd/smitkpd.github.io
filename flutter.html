@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head> <!-- CSS libraries go in here -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/style.css" rel="stylesheet" />
+        <title> Smit Kapadia's Website </title>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <!-- Div allows for the name and menu to be in-line -->
+        <nav class="navbar">
+        
+            <div class="name">
+                <text> Smit Kapadia </text>
+            </div>
+        
+            <div class="menu">
+                <ul class="list">
+                    <li class="list-items"> <a href="about-page.html"> About Me </a></li>
+                    <li class="list-items"> <a href="engineering-portfolio.html"> Engineering </a></li>
+                    <li class="list-items"> <a href="photography.html"> Photography </a></li>
+                    <li class="list-items"> <a href="short-films.html"> Short Films </a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="project">
+            <div class="project-description">
+                <h1> Purdue Space Program Projects </h1>
+                    <h2 class="subtitle"> (Jan - July 2022) </h2>
+
+                    <h3> Flutter Analysis </h3>
+                        <p> During initial design of my rocket team's fins, I investigated flutter to prevent structural failure due to resonance
+                            during flight. I started by referencing NACA TN 4197 and NACA Report 685, to understand underlying factors leading to flutter.
+                            I wanted to design a sandwich composite structure (to reduce mass), hence the analysis was more challenging compared to that for a linear, homogenous material 
+                            (such as aluminum fins). Following was my approach:-
+
+                            <ul class="bullet-points">
+                                <li> <p> &#x2022; Create FEM <i> (Finite Element Model) </i> of the composite fin in ANSYS using Composite PrepPost (ACP) </p> </li>
+                                <li> <p> &#x2022; Obtain natural frequencies and mode shapes through a Modal analysis (without applying external loads) </p> </li>
+                                <li> <p> &#x2022; Using the Strouhal number correlation (which relates velocity to an oscillating flow’s frequency) -> adjust natural frequencies through stiffness changes
+                                    (by changing carbon fiber ply count and orientation) </p> </li>
+                            </ul>
+
+                        <p> After consulting more experienced team members and engineers in industry, I learned that simplifying the analysis by using a representative beam model for the fin 
+                            (with similar material properties) and correlating natural frequencies to a PSD <i> (Power Spectral Density) </i> curve would be a better way to do this. Although, I ended up 
+                            changing to aluminum fins in the detailed design phase (due to greater mass savings in other parts of lower airframe), I gained a sense of how to simplify the 
+                            flutter problem to not fall into the trap of analysis paralysis. </p>
+            </div>
+            
+            <!-- Add a white scanned pic for below -->
+            <div class="small-projects-img-grid">
+                <figure> 
+                    <img src="images/psp/flutter-bending-mode.jpg" class="project-img-2" alt="Fin flutter bending mode">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Modal analysis: Bending mode </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/psp/flutter-torsion-mode.jpg" class="project-img-2" alt="Fin flutter torsion mode">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Modal analysis: Torsion mode </figcaption>
+                </figure>
+            </div>
+        </div>
+    </body>
+</html>

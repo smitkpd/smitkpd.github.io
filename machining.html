@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head> <!-- CSS libraries go in here -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/style.css" rel="stylesheet" />
+        <title> Smit Kapadia's Website </title>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <!-- Div allows for the name and menu to be in-line -->
+        <nav class="navbar">
+        
+            <div class="name">
+                <text> Smit Kapadia </text>
+            </div>
+        
+            <div class="menu">
+                <ul class="list">
+                    <li class="list-items"> <a href="about-page.html"> About Me </a></li>
+                    <li class="list-items"> <a href="engineering-portfolio.html"> Engineering </a></li>
+                    <li class="list-items"> <a href="photography.html"> Photography </a></li>
+                    <li class="list-items"> <a href="short-films.html"> Short Films </a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="project">
+            <div class="project-description">
+                <h1> Learning CNC Machining </h1>
+                    <h2 class="subtitle"> (Aug 2022 - Feb 2023) </h2>
+
+                    <h3> Titan 2M </h3>
+                        <p> I machined this part on a Haas 2-Axis CNC Mill, as an introduction to CNC machining. It is a semi-complex part, containining 
+                            slot features and holes. I learned to program the 2D profile toolpaths and hole drilling in Fusion 360 CAM <i> (Computer Aided Machining). </i> 
+                            I also prepared the tools and workholding. </p>
+                    <h3> Titan 9M </h3>
+                        <p> This is a more complex learning part, with 3D curved profiles and counterbore operations. I used a ball end mill to machine the 3D curved surface, 
+                            and how to efficiently select contour paths to reduce machine time, thus cost. I was quite happy with the final result! </p>
+
+                    <h3> Closing thoughts </h3>
+                    <p> By creating the CAM program and machining these parts, I learned how to adjust toolpaths and tool entry points for
+                        the tool to reduce machine time. I also got a sense of making design considerations (depth of slots, fillets, chamfers, etc.) for ease of
+                        manufacturability. </p>
+            </div>
+
+            <div class="project-img-grid">
+                <figure>
+                    <video controls="controls" width="576" height="720">
+                        <source src="images/machining/titan-2m.mp4" type="video/mp4" />
+                    </video>
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Titan 2M CAM </figcaption>
+                </figure>
+
+                <figure>
+                    <video controls="controls" width="576" height="720">
+                        <source src="images/machining/titan--9m.mp4" type="video/mp4" />
+                    </video>
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Titan 9M CAM </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/machining/titan_2M.jpg" class="slender-img-mfg" alt="Titan 2M machining">
+                    <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Titan 2M finished </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/machining/titan-9M.jpg" class="slender-img-mfg" alt="Titan 9M machining">
+                    <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Titan 9M finished </figcaption>
+                </figure>
+            </div>
+        </div>
+    </body>
+</html>

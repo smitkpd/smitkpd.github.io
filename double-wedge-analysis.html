@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head> <!-- CSS libraries go in here -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/style.css" rel="stylesheet" />
+        <title> Smit Kapadia's Website </title>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <!-- Div allows for the name and menu to be in-line -->
+        <nav class="navbar">
+        
+            <div class="name">
+                <text> Smit Kapadia </text>
+            </div>
+        
+            <div class="menu">
+                <ul class="list">
+                    <li class="list-items"> <a href="about-page.html"> About Me </a></li>
+                    <li class="list-items"> <a href="engineering-portfolio.html"> Engineering </a></li>
+                    <li class="list-items"> <a href="photography.html"> Photography </a></li>
+                    <li class="list-items"> <a href="short-films.html"> Short Films </a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="project">
+            <div class="project-description">
+                <h1> Purdue Space Program Projects </h1>
+                    <h2 class="subtitle"> (Jan - July 2022) </h2>
+
+                    <!-- Make explanation more in-depth (particalularly how drag force/coefficient can be determined) -->
+                    <!-- Add bullet points on drag determination approach -->
+                    <h3> Fin Double-Wedge Airfoil analysis </h3>
+                        <p> To determine the optimal double-wedge airfoil shape for my rocket team's fins, I wrote a script to calculate drag across a supersonic double-wedge airfoil.
+                            I used the compressible flow equations for oblique and expansion shocks, to calculate the pressure ratio at each station. Drag can be derived
+                            from these pressure ratios. Additionally, I modeled a 2D double-wedge airfoil in CFD using Ansys FLUENT to determine the drag coefficient, and validate
+                            with hand calculations.
+                        </p>
+            </div>
+            
+            <!-- Add a white scanned pic for below -->
+            <div class="small-projects-img-grid">
+                <figure> 
+                    <img src="images/psp/double-wedge-calcs.jpg" class="project-img-2" alt="Double wedge airfoil hand calculations">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Double wedge airfoil shock waves </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/psp/double-wedge-cfd.jpg" class="project-img-2" alt="Double wedge airfoil CFD">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> CFD: Velocity contours </figcaption>
+                </figure>
+            </div>
+        </div>
+    </body>
+</html>
