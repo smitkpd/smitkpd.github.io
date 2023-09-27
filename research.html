@@ -30,25 +30,26 @@
                     <h2 class="subtitle"> (May - July 2023) </h2>
 
                     <h3> Introduction </h3>
-                        <p> In Summer 2023, I conducted undergraduate research, as part of Purdue <a href="https://engineering.purdue.edu/Engr/Research/EURO/students/about-SURF" class="hyperlink" target="blank"> SURF. </a> 
-                            I designed the electronics setup of and integrated 3-axis accelerometers for a Micro Gas Turbine engine to measure vibrations during testing. Additionally, I machined
-                            a shaft, compressor cap and engine mounting plate on CNC mills and lathes. I also procured testing hardware (bolts, mounting brackets,
-                            thermocouples, etc) and played an active role in engine assembly. </p>
+                        <p> In Summer 2023, I conducted undergraduate research, as part of Purdue <a href="https://engineering.purdue.edu/Engr/Research/EURO/students/about-SURF" class="hyperlink" target="blank"> SURF </a> 
+                            at Purdue Zucrow Propulsion Labs. I integrated 3-axis accelerometers to measure vibrations during testing of a Micro Gas Turbine engine. Additionally, I machined
+                            a shaft, compressor cap and engine mounting plate on a CNC Lathe and 2-Axis CNC Mill. I also procured testing hardware (bolts, mounting brackets,
+                            thermocouples, etc) and contributed to engine assembly. </p>
                     <h3> Vibration measurement </h3>
-                        <p> Vibration environment for aircraft engines has been extensively analyzed, however, not much literature exists for micro gas turbine (MGT) 
+                        <p> Vibration environment for aircraft engines has been extensively analyzed, however, not much literature exists for micro gas turbine 
                             engines. For this reason, I chose to characterize how resonant frequencies change with air-fuel equivalence ratio. I procured 3-Axis 
-                            accelerometers, soldered and connected them to an Arduino for reading acceleration values. I also prepared a MATLAB script to post-process the data 
-                            and identify resonant frequencies using FFT (Fast Fourier Transform). <br> <br>
+                            accelerometers, soldered and connected them to an Arduino for reading acceleration values. I also prepared a MATLAB script to identify 
+                            resonant frequencies through FFT (Fast Fourier Transform) analysis. <br> <br>
 
-                            Although, our group couldn’t conduct testing with fuel (due to issues related to fit and tolerancing of components), I validated data 
-                            collection from the accelerometers during initial engine tests.
+                            Although, our group couldn’t conduct testing with fuel (due to issues regarding fit and tolerancing of components), I validated data 
+                            collection from the accelerometers during initial engine tests. I also learned that enforcing tolerances based on the desired fit is crucial for parts
+                            like a shaft, where tight clearances are involved between shaft and load (bearings, turbine, compressor, etc.)
                             </p>
                     <h3> Machining </h3>
                         <div class="specifics"> 
-                            <p> <span style="color: whitesmoke"> <b>Shaft:</b> </span> I machined the engine shaft with a peer mentor at Purdue’s BIDC. The tight diameter tolerance and square flat profile 
-                                <span style="color: rgb(7, 178, 116)"> (Figure X) </span> made this one of my biggest machining challenges. I had to repeatedly measure the 
-                                shaft diameter and adjust the CAM <i>(Computer Aided Machining)</i> program to achieve the desired diameter. Moreover, I carried out multiple lathe 
-                                operations to machine the shaft shoulders, as a high aspect ratio (length / diameter) stock would vibrate during machining. 
+                            <p> <span style="color: whitesmoke"> <b>Shaft:</b> </span> I machined the engine shaft with a peer mentor at Purdue’s <a href="https://www.purdue.edu/bidc/" class="hyperlink" target="_blank"> 
+                                BIDC. </a> The tight diameter tolerance and square flat profile made this one of my biggest machining challenges. I had to repeatedly measure the 
+                                shaft diameter and adjust CAM <i>(Computer Aided Machining)</i> to achieve the desired diameter. Moreover, I carried out multiple lathe 
+                                operations to machine the shaft shoulders, as a high aspect ratio (length / diameter) stock could impact cylindricity through vibrations during machining.
                                 I used a 2-Axis CNC Mill to machine the flat surfaces, with an end mill. </p>
 
                                 <p> <span style="color: whitesmoke"> <b>Compressor Cap:</b> </span>This component prevents axial movement of the turbine during operation. 
