@@ -31,19 +31,19 @@
                     <h2 class="subtitle"> (Jan - July 2023) </h2>
 
                     <h3> Introduction </h3>
-                        <p> As the Responsible Engineer, I owned the design, analysis and integration of the lower airframe in the Structures Team.
-                            I managed and guided a team of 2-3 engineers to CAD components and carry out stress hand calculations. Additionally, this
+                        <p> As the Responsible Engineer, I owned the design, analysis and integration of the Lower Airframe in the Structures Team.
+                            I managed and guided a team of 2-3 engineers to CAD components and prepare stress hand calculations. Additionally, this
                             position pushed me to communicate design and functional intent of parts with other sub-teams (Fluids and Avionics), and iterate design
                             for smooth integration. </p>
                             
                     <h3> Design </h3>
-                        <p> I chose an assymmetric T-cross-section for the strut (vertical structural member) to allow for panel attachment on both sides, and fin attachment to the web.
-                            For fin design, I optimized dimensions (root and tip chord, thickness, span) for stability margin off-the-rail using RASAero (open source 6DOF simulator),
-                            and critical flutter velocity (for which, I used safety factor of 1.5x Max Mach). The strut length was driven by fin root chord and plumbing length in lower airframe.
+                        <p> I chose an assymmetric T-cross-section for the strut (vertical structural member) to allow for airframe panel mounting on both sides, and fin attachment to the web.
+                            For fin design, I optimized dimensions (root and tip chord, thickness, span, etc) for stability margin off-the-rail using RASAero (open source 6DOF simulator),
+                            and critical flutter velocity (for which, I used a safety factor of 1.5x Max Mach). The strut length was driven by fin root chord and plumbing length of Fluid Systems in lower airframe.
                         </p>
                     <h3> Analysis </h3>
                         <p> I determined safety factors for max stress (compressive + bending), flexural and torsional buckling through hand calculations. I optimized the strut's cross-sectional
-                            dimensions for reducing mass, with the constraints of having at least a safety factor of 1.5 under axial stress, 2.0 under bending stress and 5.0 in buckling. 
+                            dimensions for reducing mass, under Safety Factor constraints (1.5 for axial stress, 2.0 for bending stress and 5.0 for buckling). 
                              <br> <br> 
                             
                             Next, I created a FEM <i> (Finite Element Model) </i> of the struts in ANSYS to determine the Von Mises Stress distribution and Buckling safety factors. 
@@ -53,10 +53,10 @@
                     <p>
                         Since the lower airframe houses fluid systems (tubing, valves, Quick Disconnect ports, etc) and avionics equipment, I worked closely with
                         responsible engineers on these teams to allow for ease of access and handling. For example, I ensured the strut thickness was optimized for
-                        wrench clearances (for plumbing work), and minimal edge distance for avionics mounting bolt holes, resulting in decent mass savings. <br> <br>
+                        wrench clearances (for plumbing work), and minimal edge distance for avionics mounting bolt holes for mass savings. <br> <br>
                         
-                        Moreover, I created engineering drawings of the struts and fins, applying GD&T principles. Leveraging datum planes, I applied tighter tolerances on strut tab straightness
-                        and fin surface flatness to meet fin misalignment requirements for the rocket's maximum roll rate (driven by avionics IMU). I also used material modifiers (specifically, MMC) 
+                        Moreover, I created engineering drawings of the struts and fins, applying GD&T principles. Leveraging datum planes, I applied tighter tolerances on <b> strut tab straightness
+                        </b> and <b> fin surface flatness </b> to meet fin misalignment requirements for the rocket's maximum roll rate. I also used material modifiers (specifically, MMC) 
                         for clearance holes at interfaces (strut to tank bulkhead and strut to fin) to allow for bonus tolerancing. I loved learning about how tolerancing and datum planes can be leveraged
                         to convey the part's functional intent to machinists! </p>
                     
