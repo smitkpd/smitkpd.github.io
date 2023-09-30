@@ -390,9 +390,8 @@ figcaption{
         grid-gap: var(--gap);
     }
 
-    
     .project-img-2{
-        width:200px
+        width:200px;
     }
 
     .portrait-grid{
