@@ -30,10 +30,24 @@ u{
 
 /* Heading */
 .name{
-    color: rgb(8, 80, 8);
+    color: rgb(12, 119, 12);
     padding: 2vh 0px 15px 2vh; /* moves clockwise */
     font-size: 1.75em; /* Scale relative to global font size */
     letter-spacing: 0.16vh;
+}
+
+.footer{
+    display: flex; /* Puts items in one row */
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-left: 0px;
+    height: 8.5vh;
+    background-color: rgb(68, 68, 68);
+}
+
+.footer-text{
+    font-size: .89em;
+    align-self: center;
 }
 
 /* Calls the navbar class */
@@ -48,7 +62,6 @@ u{
 .list{
     display: flex;
     padding: 3vh 2vh 10px 10px;
-    align-items: first baseline;
     gap: 2vh; /* horizonotal spacing between items */
 }
 
@@ -342,15 +355,6 @@ figcaption{
     padding-bottom: 20px
 }
 
-/*
-.project{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-*/
-
 .project-div{
     display: flex;
     flex-direction: row;
@@ -375,6 +379,14 @@ figcaption{
     gap: 20px;
 }
 
+.project-img-grid-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
 .project-description{
     margin-right: 10px;
     width: 40%;
@@ -383,6 +395,11 @@ figcaption{
 .project-description-2{
     margin-right: 10px;
     width: 70%;
+}
+
+.project-description-3{
+    margin-right: 10px;
+    width: 60%;
 }
 
 .horiz_section{
