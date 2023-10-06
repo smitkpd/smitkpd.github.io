@@ -39,9 +39,7 @@ u{
 .footer{
     display: flex; /* Puts items in one row */
     justify-content: space-between;
-    margin-top: 50px;
-    padding-left: 0px;
-    height: 8.5vh;
+    height: 8vh;
     background-color: rgb(68, 68, 68);
 }
 
@@ -54,7 +52,6 @@ u{
 .navbar{
     display: flex; /* Puts items in one row */
     justify-content: space-between;
-    padding-left: 0px;
     height: 10vh;
     background-color: beige;
 }
@@ -231,7 +228,7 @@ ul{
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    padding: 6vh 2vh 190px 4vh;
+    padding: 6vh 2vh 239px 4vh;
 }
 
 .profile-description{
@@ -251,6 +248,7 @@ figcaption{
     padding-top: 10px;
     font-size: 16px;
 }
+
 /*
 .project{
     scrollbar-width: thin;
@@ -263,45 +261,20 @@ figcaption{
 }
 */
 
-
-
 /*
-.project{
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-*/
-
-/*
-.project-img-grid{
-    --gap: 2.3vh;
-    --num-cols: 2;
-
-    box-sizing: border-box;
-    padding: 2em 30px 10px 2.7vh;
-
-    display: grid;
-
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-gap: var(--gap);
-}
-*/
-
 .small-projects-img-grid{
     --gap: 2.7vh;
     --num-cols: 2;
 
-    box-sizing: border-box; /* Considers pre-defined border padding */
+    box-sizing: border-box;
     padding: 2em 8vh 10px 2.7vh;
 
     display: grid;
 
-    /* Set a 2 column grid */
     grid-template-columns: repeat(var(--num-cols), 1fr);
     grid-gap: var(--gap);
 }
+*/
 
 .project-img{
     /* Width will automatically adjust to maintain aspect ratio */
@@ -309,12 +282,29 @@ figcaption{
     object-fit: contain;
 }
 
+
+.lower-airframe-img{
+    /* Width will automatically adjust to maintain aspect ratio */
+    height: 280px;
+    object-fit: contain;
+}
+
+.wind-tunnel-img{
+    height: 270px;
+    object-fit: contain;
+}
+
 .slender-img{
-    height: 300px;
+    height: 370px;
     object-fit: contain;
 }
 
 .project-img-2{
+    width: 390px;
+    object-fit: contain;
+}
+
+.strut-img{
     width: 390px;
     object-fit: contain;
 }
@@ -355,11 +345,40 @@ figcaption{
     padding-bottom: 20px
 }
 
+
 .project-div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 40px 0px 5px;
+    padding: 10px 40px 35px 5px;
+}
+
+.project-div-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 80px 195px 5px;
+}
+
+.project-div-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 150px 5px 5px;
+}
+
+.project-div-4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 80px 80px 5px;
+}
+
+.project-div-5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 80px 230px 5px;
 }
 
 .project-img-grid{
@@ -367,16 +386,62 @@ figcaption{
     align-items: center;
     justify-content: space-between;
     flex-flow: wrap;
+    padding: 25px 35px 5px 0px;
     gap: 40px;
 }
 
-.project-img-grid-2{
+.wind-tunnel-img-grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 25px 5px 10px 0px;
+    gap: 80px;
+}
+
+.wind-tunnel-img-grid-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 25px 0px 10px 0px;
+    gap: 100px;
+}
+
+.strut-img-grid{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-flow: wrap;
+    padding: 25px 35px 0px 0px;
+    gap: 60px;
+}
+
+.lower-airframe-grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: wrap;
+    padding: 25px 0px 5px 0px;
+    gap: 30px;
+}
+
+.project-img-grid-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
     padding-top: 10px;
     gap: 20px;
+}
+
+.machining-img-grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+    padding: 10px 80px 0px 0px;
+    gap: 70px;
 }
 
 .project-img-grid-3{
@@ -386,6 +451,28 @@ figcaption{
     flex-direction: column;
     padding-top: 10px;
 }
+
+
+.project-img-grid-4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 35px;
+    gap: 80px;
+}
+
+.project-vid-grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 15px 70px 35px 10px;
+    gap: 50px;
+    margin-left: 80px;
+    flex-shrink: 2;
+}
+
 
 .project-description{
     margin-right: 10px;
@@ -397,9 +484,21 @@ figcaption{
     width: 70%;
 }
 
+
 .project-description-3{
     margin-right: 10px;
+    width: 50%;
+}
+
+.project-description-4{
+    padding-left: 15px;
+    margin-right: 10px;
     width: 60%;
+}
+
+.project-description-5{
+    margin-right: 10px;
+    width: 100%;
 }
 
 .horiz_section{
@@ -409,11 +508,9 @@ figcaption{
 
 .engineering-dwg-grid{
     display: flex;
-    margin-right: 150px;
-    gap: 20px;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .bullet-points{
@@ -435,10 +532,13 @@ figcaption{
         margin: 5px 0px;
         border-radius: 25px;
     }
+
     .image-grid{
-        --num-cols: 1;
-        --row-height: 100px;
-        margin-right: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: wrap;
+        gap: 100px;
     }
 
     .photography-grid{
@@ -469,12 +569,20 @@ figcaption{
     }
 
     .name{
-        font-size: 1em;
+        font-size: 3.2vh;
+        padding-top: 20px
     }
 
     .list{
-        font-size: 0.5em;
+        font-size: 0.3em;
     }
+
+        
+    .list-items a{
+        color: black;
+        font-size: 2.5vh;
+    }
+
     /*
     .project{
         display: flex;
@@ -487,14 +595,79 @@ figcaption{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 10px 40px 0px 5px;
+        padding: 5px 20px 0px 5px;
+        align-items: start;
     }
 
-    .project-img-grid{
+    
+    .project-div-2{
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px 20px 0px 5px;
         align-items: start;
+    }
+
+    .project-div-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px 20px 0px 5px;
+        align-items: start;
+    }
+
+    .project-div-4{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px 20px 0px 5px;
+        align-items: start;
+    }
+
+    .lower-airframe-grid{
+        display: flex;
+        align-items: center;
         justify-content: space-between;
         flex-flow: wrap;
+        padding: 25px 35px 5px 0px;
+    }
+
+    .wind-tunnel-img-grid{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: wrap;
+        padding: 25px 5px 10px 0px;
+        gap: 0px;
+    }
+
+    .wind-tunnel-img-grid-2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: wrap;
+        padding: 25px 5px 10px 0px;
+        gap: 0px;
+    }
+
+    .engineering-dwg-grid{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 25px 35px 5px 0px;
+        gap: 0px;
+    }
+
+    .project-vid-grid{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 15px 70px 35px 10px;
+        gap: 10px;
+        margin-left: 30px;
+        flex-shrink: 2;
     }
 
     .engineering-drawing{
@@ -503,11 +676,43 @@ figcaption{
 
     .project-description{
         width: 100%;
+        padding-bottom: 20px;
+    }
+    
+    .project-description-2{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .project-description-3{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .project-description-4{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .project-description-5{
+        width: 100%;
+        padding-bottom: 20px;
     }
 
     .project-img-2{
         padding-right: 20px;
         width: 200px;
+    }
+
+    .strut-img{
+        width: 370px;
+        padding-right: 20px;
+    }
+
+    .project-img-caption{
+        font-size: 0.82em;
+        padding-top: 5px;
+        padding-bottom: 55px
     }
 
     .project-img-3{
