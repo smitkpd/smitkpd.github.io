@@ -304,6 +304,7 @@ figcaption{
     object-fit: contain;
 }
 
+
 .strut-img{
     width: 390px;
     object-fit: contain;
@@ -311,6 +312,12 @@ figcaption{
 
 .project-img-3{
     width: 500px;
+    object-fit: contain;
+}
+
+
+.project-img-4{
+    width: 450px;
     object-fit: contain;
 }
 
@@ -355,14 +362,16 @@ figcaption{
 
 .project-div-2{
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 80px 195px 5px;
+    padding: 0px 80px 195px 5px;
 }
 
 .project-div-3{
     display: flex;
     flex-direction: row;
+    align-items: start;
     justify-content: space-between;
     padding: 10px 150px 5px 5px;
 }
@@ -378,7 +387,7 @@ figcaption{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 80px 230px 5px;
+    padding: 10px 80px 190px 5px;
 }
 
 .project-img-grid{
@@ -397,6 +406,15 @@ figcaption{
     flex-direction: row;
     padding: 25px 5px 10px 0px;
     gap: 80px;
+}
+
+.research-img-grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 130px 0px 10px 40px;
+    gap: 90px;
 }
 
 .wind-tunnel-img-grid-2{
@@ -458,8 +476,17 @@ figcaption{
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    padding-bottom: 35px;
+    padding: 20px 0px 30px 0px;
     gap: 80px;
+}
+
+.project-img-grid-5{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px 20px 30px 20px;
+    gap: 40px;
 }
 
 .project-vid-grid{
@@ -468,9 +495,9 @@ figcaption{
     justify-content: space-between;
     flex-direction: row;
     padding: 15px 70px 35px 10px;
-    gap: 50px;
+    gap: 70px;
     margin-left: 80px;
-    flex-shrink: 2;
+    flex-shrink: 5;
 }
 
 
@@ -595,33 +622,41 @@ figcaption{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 5px 20px 0px 5px;
-        align-items: start;
+        padding: 5px 0px 0px 5px;
+        align-items: center;
     }
-
     
     .project-div-2{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 5px 20px 0px 5px;
-        align-items: start;
+        padding: 5px 0px 0px 5px;
+        align-items: center;
     }
 
     .project-div-3{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 5px 20px 0px 5px;
-        align-items: start;
+        padding: 5px 0px 0px 5px;
+        align-items: center;
     }
 
     .project-div-4{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 5px 20px 0px 5px;
-        align-items: start;
+        padding: 5px 0px 0px 5px;
+        align-items: center;
+    }
+
+    
+    .project-div-5{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 0px 190px 5px;
+        align-items: center;
     }
 
     .lower-airframe-grid{
@@ -629,7 +664,16 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-flow: wrap;
-        padding: 25px 35px 5px 0px;
+        padding: 15px 35px 5px 0px;
+    }
+
+    .strut-img-grid{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: wrap;
+        padding: 25px 35px 0px 0px;
+        gap: 50px;
     }
 
     .wind-tunnel-img-grid{
@@ -637,7 +681,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-flow: wrap;
-        padding: 25px 5px 10px 0px;
+        padding: 15px 5px 10px 0px;
         gap: 0px;
     }
 
@@ -646,7 +690,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-flow: wrap;
-        padding: 25px 5px 10px 0px;
+        padding: 15px 5px 10px 0px;
         gap: 0px;
     }
 
@@ -655,9 +699,37 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 25px 35px 5px 0px;
+        padding: 15px 35px 5px 0px;
         gap: 0px;
     }
+
+    .project-img-grid-4{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 15px 20px 30px 20px;
+        gap: 5px;
+    }
+    
+    .project-img-grid-5{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 15px 20px 30px 20px;
+        gap: 10px;
+    }
+
+    .research-img-grid{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 15px 0px 10px 40px;
+        gap: 10px;
+    }
+
 
     .project-vid-grid{
         display: flex;
@@ -676,31 +748,30 @@ figcaption{
 
     .project-description{
         width: 100%;
-        padding-bottom: 20px;
     }
     
     .project-description-2{
         width: 100%;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     .project-description-3{
         width: 100%;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     .project-description-4{
         width: 100%;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     .project-description-5{
         width: 100%;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     .project-img-2{
-        padding-right: 20px;
+        padding-right: 10px;
         width: 200px;
     }
 
@@ -717,6 +788,11 @@ figcaption{
 
     .project-img-3{
         width: 20em;
+    }
+    
+    .slender-img{
+        width: 250px;
+        object-fit: contain;
     }
 
     .portrait-grid{
