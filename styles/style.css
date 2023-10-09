@@ -161,6 +161,7 @@ ul{
 
 .profile-img{
     width: 300px;
+    margin-right: 50px;
     object-fit: contain;
 }
 
@@ -246,7 +247,7 @@ figcaption{
     color: #ebba34ef;
     text-align: center;
     padding-top: 10px;
-    font-size: 16px;
+    font-size: 17.5px;
 }
 
 /*
@@ -364,7 +365,7 @@ figcaption{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 40px 35px 5px;
+    padding: 20px 40px 230px 25px;
 }
 
 .project-div-2{
@@ -603,7 +604,7 @@ figcaption{
     }
 
     .name{
-        font-size: 3.2vh;
+        font-size: 3vh;
         padding-top: 20px
     }
 
@@ -613,7 +614,7 @@ figcaption{
         
     .list-items a{
         color: black;
-        font-size: 2.5vh;
+        font-size: 2.3vh;
     }
 
     /*
@@ -739,7 +740,7 @@ figcaption{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 20px 40px 35px 20px;
+        padding: 20px 0px 35px;
     }
 
     .project-vid-grid{
@@ -845,5 +846,11 @@ figcaption{
     .image{
         height: 200px; /* Width will adjust automatically to maintain aspect ratio */
         object-fit: contain;
+    }
+
+    .profile-img{
+        max-width: 250px;
+        margin-left: 90px;
+        padding-bottom: 35px;
     }
 }
