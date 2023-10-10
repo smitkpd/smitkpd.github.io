@@ -251,33 +251,6 @@ figcaption{
     font-size: 17.5px;
 }
 
-/*
-.project{
-    scrollbar-width: thin;
-    padding-bottom: 200px;
-
-    display: flex;
-    align-items: start;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-*/
-
-/*
-.small-projects-img-grid{
-    --gap: 2.7vh;
-    --num-cols: 2;
-
-    box-sizing: border-box;
-    padding: 2em 8vh 10px 2.7vh;
-
-    display: grid;
-
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-gap: var(--gap);
-}
-*/
-
 .project-img{
     /* Width will automatically adjust to maintain aspect ratio */
     height: 36vh;
@@ -313,14 +286,15 @@ figcaption{
 }
 
 .project-img-3{
-    width: 450px;
+    width: 400px;
     object-fit: contain;
 }
 
 
 .project-img-4{
-    width: 450px;
+    width: 400px;
     object-fit: contain;
+    margin-right: 25px;
 }
 
 .slender-img-mfg{
@@ -396,7 +370,7 @@ figcaption{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 80px 190px 5px;
+    padding: 10px 80px 210px 5px;
 }
 
 .project-img-grid{
@@ -575,7 +549,7 @@ figcaption{
         align-items: center;
         flex-flow: wrap;
         gap: 100px;
-        padding-left: 30px;
+        padding-left: 45px;
     }
 
     .photography-grid{
@@ -610,13 +584,21 @@ figcaption{
         padding-top: 20px
     }
 
+    
+    figcaption{
+        color: #ebba34ef;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
     .list{
         font-size: 0.3em;
     }
         
     .list-items a{
         color: black;
-        font-size: 2vh;
+        font-size: 1.7vh;
     }
 
     /*
@@ -789,14 +771,21 @@ figcaption{
         width: 200px;
     }
 
+        
+    .project-img-4{
+        width: 300px;
+        object-fit: contain;
+        margin-right: 25px;
+    }
+
     .strut-img{
-        width: 370px;
+        width: 340px;
         padding-right: 70px;
     }
 
     .lower-airframe-img{
         /* Width will automatically adjust to maintain aspect ratio */
-        height: 230px;
+        height: 200px;
         object-fit: contain;
         padding-right: 60px;
     }
@@ -812,7 +801,7 @@ figcaption{
     }
     
     .slender-img{
-        width: 250px;
+        width: 230px;
         object-fit: contain;
     }
 
@@ -845,9 +834,13 @@ figcaption{
 
     }
 
-
     .image{
         height: 200px; /* Width will adjust automatically to maintain aspect ratio */
+        object-fit: contain;
+    }
+
+    .image-2{
+        height: 250px; /* Width will adjust automatically to maintain aspect ratio */
         object-fit: contain;
     }
 
@@ -855,5 +848,12 @@ figcaption{
         max-width: 250px;
         margin-left: 90px;
         padding-bottom: 35px;
+    }
+
+    .footer{
+        display: flex; /* Puts items in one row */
+        justify-content: space-between;
+        height: 12vh;
+        background-color: rgb(68, 68, 68);
     }
 }
