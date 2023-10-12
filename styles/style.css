@@ -30,7 +30,7 @@ u{
 
 /* Heading */
 .name{
-    color: rgb(12, 119, 12);
+    color: rgb(9, 98, 9);
     padding: 2vh 0px 15px 2vh; /* moves clockwise */
     font-size: 1.75em; /* Scale relative to global font size */
     letter-spacing: 0.16vh;
@@ -39,12 +39,13 @@ u{
 .footer{
     display: flex; /* Puts items in one row */
     justify-content: space-between;
-    height: 8vh;
+    height: 10vh;
     background-color: rgb(68, 68, 68);
 }
 
 .footer-text{
-    font-size: .89em;
+    color: rgb(186, 186, 186);
+    font-size: .9em;
     align-self: center;
 }
 
@@ -162,7 +163,7 @@ ul{
 
 .profile-img{
     width: 300px;
-    margin-right: 50px;
+    margin-right: 35px;
     object-fit: contain;
 }
 
@@ -274,6 +275,11 @@ figcaption{
     object-fit: contain;
 }
 
+.strut-portrait-img{
+    width: 390px;
+    object-fit: contain;
+}
+
 .project-img-2{
     width: 390px;
     object-fit: contain;
@@ -285,8 +291,9 @@ figcaption{
     object-fit: contain;
 }
 
+
 .project-img-3{
-    width: 400px;
+    width: 450px;
     object-fit: contain;
 }
 
@@ -294,16 +301,15 @@ figcaption{
 .project-img-4{
     width: 400px;
     object-fit: contain;
-    margin-right: 25px;
 }
 
 .slender-img-mfg{
-    height: 370px;
+    height: 320px;
     object-fit: contain;
 }
 
 .engineering-drawing{
-    width: 530px;
+    width: 500px;
     object-fit: contain;
 }
 
@@ -323,7 +329,7 @@ figcaption{
 */
 
 .project-img-caption{
-    font-size: 0.82em;
+    font-size: 0.85em;
     padding-top: 5px;
     padding-bottom: 20px
 }
@@ -340,7 +346,7 @@ figcaption{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 40px 230px 25px;
+    padding: 35px 40px 232px 35px;
 }
 
 .project-div-2{
@@ -370,7 +376,7 @@ figcaption{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 80px 210px 5px;
+    padding: 10px 80px 218px 5px;
 }
 
 .project-img-grid{
@@ -432,7 +438,6 @@ figcaption{
     justify-content: space-between;
     align-items: center;
     flex-flow: wrap;
-    padding-top: 10px;
     gap: 20px;
 }
 
@@ -441,8 +446,8 @@ figcaption{
     justify-content: space-between;
     align-items: center;
     flex-flow: wrap;
-    padding: 10px 80px 0px 0px;
-    gap: 70px;
+    padding: 20px 30px 0px 0px;
+    gap: 37px;
 }
 
 .project-img-grid-3{
@@ -485,35 +490,34 @@ figcaption{
 
 
 .project-description{
-    margin-right: 10px;
+    margin-right: 5px;
     width: 40%;
 }
 
 .project-description-2{
-    margin-right: 10px;
+    margin-right: 5px;
     width: 70%;
 }
 
 
 .project-description-3{
-    margin-right: 10px;
+    margin-right: 5px;
     width: 50%;
 }
 
 .project-description-4{
     padding-left: 15px;
-    margin-right: 10px;
     width: 60%;
 }
 
 .project-description-5{
-    margin-right: 10px;
+    margin-right: 5px;
     width: 100%;
 }
 
 .horiz_section{
+    margin-right: 5px;
     width: 70%;
-    margin-right: 10px;
 }
 
 .engineering-dwg-grid{
@@ -613,7 +617,7 @@ figcaption{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 5px 0px 0px 5px;
+        padding: 5px 30px 0px 5px;
         align-items: center;
     }
     
@@ -671,8 +675,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-flow: wrap;
-        padding: 15px 5px 10px 0px;
-        gap: 0px;
+        padding-right: 5px;
     }
 
     .wind-tunnel-img-grid-2{
@@ -680,8 +683,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-flow: wrap;
-        padding: 15px 5px 10px 0px;
-        gap: 0px;
+        padding-right: 5px;
     }
 
     .engineering-dwg-grid{
@@ -690,7 +692,6 @@ figcaption{
         justify-content: space-between;
         flex-wrap: wrap;
         padding: 15px 35px 5px 0px;
-        gap: 0px;
     }
 
     .project-img-grid-4{
@@ -724,7 +725,7 @@ figcaption{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 20px 0px 35px;
+        padding: 35px 0px 35px;
     }
 
     .project-vid-grid{
@@ -771,6 +772,10 @@ figcaption{
         width: 200px;
     }
 
+    .strut-portrait-img{
+        width: 330px;
+    }
+
         
     .project-img-4{
         width: 300px;
@@ -798,6 +803,10 @@ figcaption{
 
     .project-img-3{
         width: 15em;
+    }
+
+    .stress-img{
+        width: 400px;
     }
     
     .slender-img{
@@ -853,7 +862,5 @@ figcaption{
     .footer{
         display: flex; /* Puts items in one row */
         justify-content: space-between;
-        height: 12vh;
-        background-color: rgb(68, 68, 68);
     }
 }
