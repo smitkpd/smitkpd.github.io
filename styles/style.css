@@ -137,27 +137,17 @@ ul{
     grid-gap: var(--gap);
 }
 
-
 .photography-grid{
-    --gap: 100px; /* Sets a variable */
-    --num-cols: 2;
-    --row-height: 80px;
-
-    box-sizing: border-box; /* Considers pre-defined border padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
     padding: 30px 150px 100px 100px;
-
-    display: grid;
-
-    /* Set a 2x2 grid */
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: repeat(var(--row-height), 1fr);
-    grid-gap: var(--gap);
+    gap: 100px;
 }
 
-
-/* Target images */
 .image{
-    height: 300px; /* Width will adjust automatically to maintain aspect ratio */
+    height: 300px;
     object-fit: contain;
 }
 
@@ -179,7 +169,7 @@ ul{
 }
 
 .landscape{
-    height: 320px;
+    width: 530px;
     object-fit: contain;
 }
 
@@ -188,32 +178,22 @@ ul{
     object-fit: contain;
 }
 
+
 .landscape-grid{
-    --gap: 8vh;
-    --num-cols: 2;
-
-    box-sizing: border-box; /* Considers pre-defined border padding */
-    padding: 2em 6vh 5vh 15.5vh;
-
-    display: grid;
-
-    /* Set a 2 column grid */
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-gap: var(--gap);
-
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    align-items: center;
+    padding: 2em 11vh 5vh 11vh;
 }
 
 .portrait-grid{
-    --gap: 7vh;
-    --num-cols: 3;
-
-    box-sizing: border-box;
-    padding: 2em 6vh 5vh 11vh;
-
-    display: grid;
-
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-gap: var(--gap);
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    align-items: center;
+    padding: 2em 11vh 5vh 11vh;
+    gap: 2vh;
 }
 
 /*
@@ -297,6 +277,11 @@ figcaption{
     object-fit: contain;
 }
 
+.photography-img{
+    height: 290px;
+    object-fit: contain;
+    
+}
 
 .project-img-4{
     width: 400px;
@@ -556,12 +541,8 @@ figcaption{
         padding-left: 45px;
     }
 
-    .photography-grid{
-        --num-cols: 1;
-        --gap: 9vh;
-    }
-
     h1{
+        font-size: 1.1em;
         padding-left: 4vh;
     }
 
@@ -576,7 +557,7 @@ figcaption{
     p {
         box-sizing: border-box;
         padding: 7px 1.5vh 10px 30px;
-        font-size: 0.93em;
+        font-size: 0.85em;
         color: grey;
         line-height: 1.5;
         margin-right: 70px;
@@ -602,7 +583,7 @@ figcaption{
         
     .list-items a{
         color: black;
-        font-size: 1.7vh;
+        font-size: 2vh;
     }
 
     /*
@@ -675,7 +656,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-flow: wrap;
-        padding-right: 5px;
+        gap: 25px;
     }
 
     .wind-tunnel-img-grid-2{
@@ -683,7 +664,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-flow: wrap;
-        padding-right: 5px;
+        gap: 35px;
     }
 
     .engineering-dwg-grid{
@@ -745,6 +726,7 @@ figcaption{
 
     .project-description{
         width: 100%;
+        padding-bottom: 20px;
     }
     
     .project-description-2{
@@ -784,13 +766,13 @@ figcaption{
     }
 
     .strut-img{
-        width: 340px;
+        width: 320px;
         padding-right: 70px;
     }
 
     .lower-airframe-img{
         /* Width will automatically adjust to maintain aspect ratio */
-        height: 200px;
+        height: 190px;
         object-fit: contain;
         padding-right: 60px;
     }
@@ -801,8 +783,20 @@ figcaption{
         padding-bottom: 55px
     }
 
+    .project-img{
+        /* Width will automatically adjust to maintain aspect ratio */
+        height: 28vh;
+        object-fit: contain;
+    }
+
     .project-img-3{
         width: 15em;
+    }
+
+    .photography-img{
+        height: 170px;
+        object-fit: contain;
+        
     }
 
     .stress-img{
@@ -810,13 +804,23 @@ figcaption{
     }
     
     .slender-img{
-        width: 230px;
+        height: 270px;
         object-fit: contain;
     }
 
     .portrait-grid{
-        --gap: 8vh;
-        --num-cols: 2;    
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+        align-items: center;
+        padding: 2em 11vh 5vh 11vh;
+        gap: 7vh;
+    }
+    
+
+    .wind-tunnel-img{
+        height: 200px;
+        object-fit: contain;
     }
 
     .portrait{
@@ -843,6 +847,15 @@ figcaption{
 
     }
 
+    .photography-grid{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: wrap;
+        padding: 30px 100px 50px 100px;
+        gap: 50px;
+    }
+    
     .image{
         height: 200px; /* Width will adjust automatically to maintain aspect ratio */
         object-fit: contain;
@@ -862,5 +875,11 @@ figcaption{
     .footer{
         display: flex; /* Puts items in one row */
         justify-content: space-between;
+    }
+    
+    .footer-text{
+        color: rgb(186, 186, 186);
+        font-size: .8em;
+        align-self: center;
     }
 }
