@@ -472,7 +472,7 @@ figcaption{
     justify-content: space-between;
     flex-direction: row;
     padding: 20px 20px 30px 20px;
-    gap: 40px;
+    gap: 60px;
 }
 
 .project-vid-grid{
