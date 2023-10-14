@@ -126,9 +126,20 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-flow: wrap;
-    padding: 30px 150px 100px 100px;
+    flex-direction: row;
+    padding: 30px 100px 100px 100px;
     gap: 120px;
+}
+
+
+.image-grid-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 30px 55px 100px 100px;
+    margin-left: 55px;
+    gap: 90px;
 }
 
 .photography-grid{
@@ -168,7 +179,7 @@ ul{
 }
 
 .stress-img{
-    width: 510px;
+    width: 530px;
     object-fit: contain;
 }
 
@@ -228,7 +239,7 @@ figcaption{
 }
 
 .project-img{
-    height: 36vh;
+    height: 35vh;
     object-fit: contain;
 }
 
@@ -248,12 +259,12 @@ figcaption{
 }
 
 .slender-img{
-    height: 370px;
+    height: 350px;
     object-fit: contain;
 }
 
 .strut-mesh-img{
-    width: 470px;
+    width: 400px;
     object-fit: contain;
 }
 
@@ -291,17 +302,17 @@ figcaption{
 }
 
 .strut-cover-img{
-    height: 320px;
+    height: 330px;
     object-fit: contain;
 }
 
 .slender-img-mfg{
-    height: 350px;
+    height: 315px;
     object-fit: contain;
 }
 
 .engineering-drawing{
-    width: 530px;
+    width: 550px;
     object-fit: contain;
 }
 
@@ -317,7 +328,7 @@ figcaption{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 40px 35px 5px;
+    padding: 10px 50px 35px 5px;
 }
 
 .profile-div{
@@ -354,7 +365,7 @@ figcaption{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 80px 213px 5px;
+    padding: 10px 80px 213.8px 5px;
 }
 
 .project-img-grid{
@@ -398,8 +409,16 @@ figcaption{
     align-items: center;
     justify-content: space-between;
     flex-flow: wrap;
-    padding: 25px 35px 0px 0px;
-    gap: 95px;
+    gap: 25px;
+}
+
+.strut-img-grid-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: wrap;
+    margin-right: 100px;
+    gap: 120px;
 }
 
 .lower-airframe-grid{
@@ -416,6 +435,7 @@ figcaption{
     justify-content: space-between;
     align-items: center;
     flex-flow: wrap;
+    padding-top: 20px;
     gap: 20px;
 }
 
@@ -424,7 +444,8 @@ figcaption{
     justify-content: space-between;
     align-items: center;
     flex-flow: wrap;
-    padding: 20px 30px 0px 0px;
+    padding-top: 20px;
+    margin-right: 30px;
     gap: 37px;
 }
 
@@ -441,8 +462,8 @@ figcaption{
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    padding: 20px 0px 30px 0px;
-    gap: 80px;
+    padding-top: 20px;
+    gap: 60px;
 }
 
 .project-img-grid-5{
@@ -468,7 +489,7 @@ figcaption{
 
 .project-description{
     margin-right: 5px;
-    width: 40%;
+    width: 42%;
 }
 
 .project-description-2{
@@ -501,6 +522,7 @@ figcaption{
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
+    padding-top: 10px;
     gap: 40px;
 }
 
@@ -806,10 +828,12 @@ figcaption{
 
     .project-img-3{
         width: 16em;
+        object-fit: contain;
     }
 
     .strut-mesh-img{
-        width: 15em;
+        width: 7em;
+        object-fit: contain;
     }
 
     .accelerometer-img{

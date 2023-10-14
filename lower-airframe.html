@@ -45,7 +45,7 @@
                 
                     <figure> 
                         <img src="images/psp/strut-assem-cross-sec.jpg" class="lower-airframe-img" alt="Strut cross-section">
-                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Strut assembly side view </figcaption>
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Strut to Tank Bulkhead assembly side view </figcaption>
                     </figure>
                 </div> 
             </div>       
@@ -57,7 +57,23 @@
                             For fin design, I optimized dimensions (root and tip chord, thickness, span, etc) for stability margin off-the-rail using RASAero (open source 6DOF simulator),
                             and critical flutter velocity (for which, I used a safety factor of 1.5x Max Mach). The strut length was driven by fin root chord and plumbing length of Fluid Systems in lower airframe.
                         </p>
-            
+                </div>
+
+                <div class="strut-img-grid"> 
+                    <figure> 
+                        <img src="images/psp/strut-mesh.jpg" class="project-img" alt="Strut Mesh">
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Strut mesh </figcaption>
+                    </figure>
+
+                    <figure> 
+                        <img src="images/psp/bolt-hole-mesh.jpg" class="strut-mesh-img" alt="Bolt hole mesh">
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Fin and Panel attachment mesh </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="project-div">
+                <div class="project-description"> 
                     <h3> Analysis </h3>
                         <p> I determined safety factors for max stress (compressive + bending), flexural and torsional buckling through hand calculations. I optimized the strut's cross-sectional
                             dimensions for reducing mass, under Safety Factor constraints (1.5 for axial stress, 2.0 for bending stress and 5.0 for buckling). 
@@ -69,15 +85,15 @@
                         </p>
                 </div>
 
-                <div class="strut-img-grid"> 
+                <div class="strut-img-grid-2"> 
                     <figure> 
-                        <img src="images/psp/strut-mesh.jpg" class="strut-mesh-img" alt="Strut Mesh">
-                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Strut mesh </figcaption>
+                        <img src="images/psp/strut-vm-stress.jpg" class="slender-img" alt="Strut Von Mises Stress">
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Von Mises Stress </figcaption>
                     </figure>
-
+        
                     <figure> 
                         <img src="images/psp/lower-struts-buckling.jpg" class="slender-img" alt="Torsional buckling mode">
-                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Torsional Buckling Mode </figcaption>
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Torsional Buckling Deformation </figcaption>
                     </figure>
                 </div>
             </div>
@@ -97,7 +113,7 @@
 
                     
                     <h3> Manufacturing </h3>
-                    <p> Embracing <b> <span style="color: blanchedalmond"> Design For Manufacturing, </span> </b> I accounted for end mill tool radius when minimizing space between the fin tab and panel mounting holes on the struts.                        
+                    <p> Embracing <b> <span style="color: blanchedalmond"> Design For Manufacturing, </span> </b> I accounted for endmill tool radius when minimizing space between the fin tab and panel mounting holes on the struts.                        
                         For the fins, after making preliminary CAM <i> (Computer Aided Manufacturing) </i> in Fusion 360, I realized that having the leading and trailing edges protrude from the fin tab 
                         would be better for the chamfer tool to clear the tip, as opposed to those edges being within the fin tab boundary.
                     </p>
@@ -106,12 +122,12 @@
                 <div class="engineering-dwg-grid">
                     <figure>
                         <img src="images/psp/strut-drawing.jpg" class="engineering-drawing" alt="Strut drawing">
-                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Strut drawing </figcaption>
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Strut Drawing </figcaption>
                     </figure>
 
                     <figure>
                         <img src="images/psp/fin-drawing.jpg" class="engineering-drawing" alt="Fin drawing">
-                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Fin drawing </figcaption>
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Fin Drawing </figcaption>
                     </figure>
                 </div>
             </div>
