@@ -238,6 +238,7 @@ figcaption{
     font-size: 17.5px;
 }
 
+
 .project-img{
     height: 35vh;
     object-fit: contain;
@@ -410,6 +411,10 @@ figcaption{
     justify-content: space-between;
     flex-flow: wrap;
     gap: 25px;
+}
+
+.machining-cover-img{
+    margin-left: 120px;
 }
 
 .strut-img-grid-2{
@@ -653,7 +658,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-flow: wrap;
-        padding: 15px 15px 5px 0px;
+        padding: 15px 5px 5px 0px;
     }
 
     .strut-img-grid{
@@ -670,7 +675,7 @@ figcaption{
         justify-content: space-between;
         align-items: center;
         flex-flow: wrap;
-        padding: 20px 30px 0px 40px;
+        padding: 20px 30px 0px 60px;
         gap: 37px;
     }
     
@@ -695,8 +700,9 @@ figcaption{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap;
+        flex-direction: column;
         padding: 15px 0px 5px 15px;
+        gap: 10px;
     }
 
     .project-img-grid-4{
@@ -738,7 +744,7 @@ figcaption{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 35px 0px 0px 6px;
+        padding: 35px 0px 20px 6px;
     }
 
     .project-vid-grid{
@@ -762,31 +768,36 @@ figcaption{
 
     .project-description{
         margin-right: 0px;
-        width: 100%;
+        width: 105%;
+        margin-left: 20px;
         padding-bottom: 20px;
     }
     
     .project-description-2{
         margin-right: 0px;
-        width: 100%;
+        width: 105%;
+        margin-left: 20px;
         padding-bottom: 10px;
     }
 
     .project-description-3{
         margin-right: 0px;
-        width: 100%;
+        width: 105%;
+        margin-left: 20px;
         padding-bottom: 10px;
     }
 
     .project-description-4{
         margin-right: 0px;
-        width: 100%;
+        width: 105%;
+        margin-left: 20px;
         padding-bottom: 10px;
     }
 
     .project-description-5{
         margin-right: 0px;
-        width: 100%;
+        width: 105%;
+        margin-left: 20px;
         padding-bottom: 10px;
     }
 
@@ -810,7 +821,7 @@ figcaption{
     }
 
     .lower-airframe-img{
-        height: 220px;
+        height: 210px;
         object-fit: contain;
     }
 
@@ -821,7 +832,7 @@ figcaption{
     }
 
     .project-img{
-        height: 30vh;
+        height: 28vh;
         object-fit: contain;
         padding-left: 10px;
     }
@@ -832,14 +843,20 @@ figcaption{
     }
 
     .strut-mesh-img{
-        width: 7em;
+        height: 23vh;
         object-fit: contain;
+        padding-left: 35px;
     }
 
     .accelerometer-img{
         height: 36vh;
         object-fit: contain;
         margin-left: 25px;
+    }
+
+        
+    .machining-cover-img{
+        margin-left: 40px;
     }
 
     .photography-img{
@@ -857,12 +874,12 @@ figcaption{
     }
 
     .slender-img-mfg{
-        height: 270px;
+        height: 290px;
         object-fit: contain;
     }
 
     .strut-cover-img{
-        height: 320px;
+        height: 270px;
         object-fit: contain;
     }
 
@@ -871,8 +888,8 @@ figcaption{
         justify-content: space-between;
         flex-flow: wrap;
         align-items: center;
-        padding: 2em 11vh 5vh 6vh;
-        gap: 7vh;
+        padding: 2em 11vh 5vh 8vh;
+        gap: 10vh;
     }
 
     .project-img-grid-2{
@@ -884,6 +901,14 @@ figcaption{
         padding-left: 20px;
     }
     
+    .strut-img-grid-2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-left: 70px;
+        gap: 10px;
+    }
 
     .wind-tunnel-img{
         height: 230px;
@@ -891,7 +916,7 @@ figcaption{
     }
 
     .portrait{
-        width: 250px;
+        width: 280px;
     }
 
     .portrait-2{
@@ -904,7 +929,7 @@ figcaption{
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        padding: 2em 11vh 5vh 5vh;
+        padding: 2em 11vh 5vh 3vh;
         gap: 50px;
     }
 
@@ -922,13 +947,12 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        padding: 30px 300px 100px 100px;
-        margin-left: 0px;
-        gap: 50px;
+        padding: 10px 200px 50px 50px;
+        margin-left: 15px;   
     }
 
     .landscape{
-        width: 350px;
+        width: 330px;
         object-fit: contain;
     }
     
@@ -944,8 +968,8 @@ figcaption{
 
     .profile-img{
         max-width: 250px;
-        margin-left: 90px;
-        padding-bottom: 35px;
+        margin-left: 30px;
+        padding-bottom: 10px;
     }
 
     .footer{
