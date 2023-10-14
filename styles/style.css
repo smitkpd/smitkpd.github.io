@@ -917,6 +917,16 @@ figcaption{
         gap: 50px;
     }
 
+    .image-grid-2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 30px 300px 100px 100px;
+        margin-left: 0px;
+        gap: 50px;
+    }
+
     .landscape{
         width: 350px;
         object-fit: contain;
