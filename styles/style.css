@@ -291,6 +291,11 @@ figcaption{
     object-fit: contain;
 }
 
+.flutter-img{
+    width: 430px;
+    object-fit: contain;
+}
+
 .photography-img{
     height: 290px;
     object-fit: contain;
@@ -888,7 +893,7 @@ figcaption{
         justify-content: space-between;
         flex-flow: wrap;
         align-items: center;
-        padding: 2em 11vh 5vh 8vh;
+        padding: 2em 11vh 5vh 6vh;
         gap: 10vh;
     }
 
@@ -914,6 +919,12 @@ figcaption{
         height: 230px;
         object-fit: contain;
     }
+
+    .flutter-img{
+        width: 16em;
+        object-fit: contain;
+    }
+    
 
     .portrait{
         width: 280px;
