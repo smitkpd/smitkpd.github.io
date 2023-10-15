@@ -202,16 +202,15 @@ ul{
     gap: 2vh;
 }
 
-/*
-.img-list{
+.portrait-grid-2{
     display: flex;
-    flex-flow: column wrap;
-    padding: 2em 6vh 5vh 11vh;
-
-    column-gap: 4vh;
-    row-gap: 4vh;
+    justify-content: space-between;
+    flex-flow: wrap;
+    align-items: center;
+    padding: 2em 11vh 5vh 11vh;
+    gap: 2vh;
 }
-*/
+
 
 .profile-grid{
     box-sizing: border-box;
@@ -314,6 +313,11 @@ figcaption{
 
 .project-img-4{
     width: 400px;
+    object-fit: contain;
+}
+
+.project-img-5{
+    height: 34vh;
     object-fit: contain;
 }
 
@@ -546,7 +550,7 @@ figcaption{
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
-    padding-top: 10px;
+    padding: 10px 0px 0px 5px;
     gap: 40px;
 }
 
@@ -576,7 +580,7 @@ figcaption{
         align-items: center;
         flex-direction: column;
         gap: 80px;
-        padding: 10px 30px 60px 0px;
+        padding: 10px 30px 60px 10px;
     }
 
     h1{
@@ -624,19 +628,11 @@ figcaption{
         font-size: 2vh;
     }
 
-    /*
-    .project{
-        display: flex;
-        align-items: start;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    */
     .project-div{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 5px 30px 0px 5px;
+        padding: 5px 30px 0px 0px;
         align-items: center;
     }
     
@@ -644,7 +640,7 @@ figcaption{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 5px 0px 0px 5px;
+        padding: 5px 0px 0px 0px;
         align-items: center;
     }
 
@@ -652,7 +648,7 @@ figcaption{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 5px 0px 0px 5px;
+        padding: 5px 0px 0px 0px;
         align-items: center;
     }
 
@@ -660,7 +656,7 @@ figcaption{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 5px 0px 0px 5px;
+        padding: 5px 0px 0px 0px;
         align-items: center;
     }
 
@@ -668,7 +664,7 @@ figcaption{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 10px 0px 190px 5px;
+        padding: 10px 0px 190px 0px;
         align-items: center;
     }
 
@@ -712,6 +708,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-flow: wrap;
+        padding-left: 20px;
         gap: 35px;
     }
 
@@ -729,7 +726,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        padding: 15px 30px 30px 20px;
+        padding: 15px 20px 30px 20px;
         gap: 5px;
     }
     
@@ -738,7 +735,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        padding: 15px 15px 30px 40px;
+        padding: 15px 20px 30px 40px;
         gap: 10px;
     }
 
@@ -747,7 +744,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        padding: 10px 0px 0px 20px;
+        padding: 10px 0px 0px 22px;
     }
 
     .research-img-grid{
@@ -755,7 +752,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        padding: 15px 15px 10px 30px;
+        padding: 15px 20px 10px 30px;
         gap: 10px;
     }
 
@@ -826,6 +823,7 @@ figcaption{
 
     .strut-portrait-img{
         width: 300px;
+        margin-left: 15px;
     }
 
         
@@ -851,7 +849,7 @@ figcaption{
     }
 
     .project-img{
-        height: 29vh;
+        height: 28vh;
         object-fit: contain;
         padding-left: 10px;
     }
@@ -861,8 +859,14 @@ figcaption{
         object-fit: contain;
     }
 
+    .project-img-5{
+        height: 27vh;
+        object-fit: contain;
+        padding-left: 10px;
+    }
+
     .strut-mesh-img{
-        height: 25vh;
+        height: 24vh;
         object-fit: contain;
         padding-left: 35px;
     }
@@ -875,7 +879,11 @@ figcaption{
 
         
     .machining-cover-img{
-        margin-left: 25vw;
+        margin-left: 27vw;
+    }
+
+    .strut-mesh-cover-img{
+        margin-left: 27vw;
     }
 
     .photography-img{
@@ -907,7 +915,7 @@ figcaption{
         justify-content: space-between;
         flex-flow: wrap;
         align-items: center;
-        padding: 2em 11vh 5vh 6vh;
+        padding: 2em 11vh 5vh 8vh;
         gap: 10vh;
     }
 
@@ -917,7 +925,6 @@ figcaption{
         align-items: center;
         flex-direction: column;
         gap: 20px;
-        padding-left: 20px;
     }
     
     .strut-img-grid-2{
@@ -925,7 +932,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        margin-left: 70px;
+        margin-left: 90px;
         gap: 10px;
     }
 
@@ -954,7 +961,7 @@ figcaption{
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        padding: 2em 11vh 5vh 3vh;
+        padding: 2em 11vh 5vh 4.5vh;
         gap: 50px;
     }
 
@@ -966,6 +973,16 @@ figcaption{
         padding: 30px 200px 50px 50px;
         gap: 50px;
     }
+
+    .portrait-grid-2{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+        align-items: center;
+        padding: 2em 11vh 5vh 8vh;
+        gap: 10vh;
+    }
+    
 
     .image-grid-2{
         display: flex;
@@ -980,6 +997,11 @@ figcaption{
         width: 330px;
         object-fit: contain;
     }
+
+    .laser-img{
+        margin-right: 50px;
+    }
+    
     
     .image{
         height: 200px; /* Width will adjust automatically to maintain aspect ratio */
