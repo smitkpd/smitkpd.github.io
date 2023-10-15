@@ -132,16 +132,6 @@ ul{
 }
 
 
-.image-grid-2{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 30px 55px 100px 100px;
-    margin-left: 55px;
-    gap: 90px;
-}
-
 .photography-grid{
     display: flex;
     justify-content: space-between;
@@ -436,10 +426,6 @@ figcaption{
     margin-left: 180px;
 }
 
-.flutter-cover-img{
-    margin-right: 6vw;
-}
-
 .strut-img-grid-2{
     display: flex;
     align-items: center;
@@ -580,7 +566,7 @@ figcaption{
         align-items: center;
         flex-direction: column;
         gap: 80px;
-        padding: 10px 30px 60px 10px;
+        padding: 10px 30px 60px 8px;
     }
 
     h1{
@@ -708,7 +694,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-flow: wrap;
-        padding-left: 20px;
+        padding-left: 30px;
         gap: 35px;
     }
 
@@ -868,7 +854,6 @@ figcaption{
     .strut-mesh-img{
         height: 24vh;
         object-fit: contain;
-        padding-left: 35px;
     }
 
     .accelerometer-img{
@@ -879,7 +864,7 @@ figcaption{
 
         
     .machining-cover-img{
-        margin-left: 27vw;
+        margin-left: 23vw;
     }
 
     .strut-mesh-cover-img{
@@ -937,7 +922,7 @@ figcaption{
     }
 
     .wind-tunnel-img{
-        height: 230px;
+        height: 250px;
         object-fit: contain;
     }
 
@@ -999,17 +984,13 @@ figcaption{
     }
 
     .laser-img{
-        margin-right: 50px;
+        margin-right: 45px;
     }
     
     
     .image{
         height: 200px; /* Width will adjust automatically to maintain aspect ratio */
         object-fit: contain;
-    }
-
-    .flutter-cover-img{
-        margin-left: 6vw;
     }
 
     .image-2{
