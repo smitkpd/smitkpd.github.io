@@ -31,15 +31,15 @@
                     <h2 class="subtitle"> (Jan - July 2022) </h2>
 
                     <h3> Flutter Analysis </h3>
-                        <p> During initial design of my rocket team's fins, I investigated flutter to prevent structural failure due to <span style="color: blanchedalmond"> <b> resonance </b> </span> (external vibrations matches structure's natural frequency)
-                            during flight. I started by referencing NACA TN 4197 and NACA Report 685, to understand underlying factors leading to flutter.
+                        <p> During initial design of my rocket team's fins, I investigated flutter to prevent structural failure due to <span style="color: blanchedalmond"> <b> resonance </b> </span> (external vibrations correspond with structure's natural frequency)
+                            during flight. I started by referencing NACA TN 4197 and NACA Report 685, to understand underlying factors which cause flutter.
                             I wanted to design a sandwich composite structure (to reduce mass), hence the analysis was more challenging compared to that for a isotropic material 
-                            (e.g: Aluminum). Following was my approach:-
+                            (e.g: Aluminum). <br> <br> Following was my preliminary approach:- 
 
                             <ul class="bullet-points">
                                 <li> <p> &#x2022; Create FEM <i> (Finite Element Model) </i> of the composite fin in Ansys Composite PrepPost (ACP) </p> </li>
-                                <li> <p> &#x2022; Obtain natural frequencies and mode shapes through FE Modal analysis </p> </li>
-                                <li> <p> &#x2022; Adjust natural frequencies through stiffness changes (varying carbon fiber ply count and orientation) using the Strouhal number correlation </p> </li>
+                                <li> <p> &#x2022; Obtain <span style="color: blanchedalmond"> <b> natural frequencies and mode shapes </b> </span> through FE Modal analysis </p> </li>
+                                <li> <p> &#x2022; Adjust natural frequencies through stiffness changes (by varying carbon fiber ply count and orientation) using the Strouhal number correlation </p> </li>
                             </ul>
 
                         <p> After consulting more experienced team members and engineers in industry, I learned the following:-
@@ -48,7 +48,7 @@
                                 <li> <p> &#x2022; Simplifying analysis by using a representative <span style="color: blanchedalmond"> <b> cantilever beam model </b> </span> for the fin 
                                     (with similar material properties) and validating fin's stiffness from computational model with a <span style="color: blanchedalmond"> <b> Force-Deflection test </b> </span> to characterize response to stiffness changes. </p> </li>
                                 <li> <p> &#x2022;                             
-                                    A Modal analysis on its own wouldn't be useful, as the rocket's <span style="color: blanchedalmond"> <b> PSD </b> (Power Spectral Density) </span> curve would be needed to target resonant frequencies with greater strain energy
+                                    A Modal analysis on its own wouldn't be useful, as the rocket's <span style="color: blanchedalmond"> <b> PSD </b> </span> <i> (Power Spectral Density) </i> curve would be needed to target resonant frequencies with greater strain energy
                                     for avoiding structural failure.</p> </li>
                             </ul>
                             

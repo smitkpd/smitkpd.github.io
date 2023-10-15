@@ -126,7 +126,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
+    flex-flow: wrap;
     padding: 30px 100px 100px 100px;
     gap: 120px;
 }
@@ -240,8 +240,12 @@ figcaption{
 
 
 .project-img{
-    height: 35vh;
+    height: 34vh;
     object-fit: contain;
+}
+
+.laser-img{
+    margin-right: 100px;
 }
 
 .accelerometer-img{
@@ -250,7 +254,7 @@ figcaption{
 }
 
 .lower-airframe-img{
-    height: 270px;
+    height: 260px;
     object-fit: contain;
 }
 
@@ -259,13 +263,19 @@ figcaption{
     object-fit: contain;
 }
 
+
+.wind-tunnel-img-2{
+    width: 300px;
+    object-fit: contain;
+}
+
 .slender-img{
-    height: 350px;
+    height: 335px;
     object-fit: contain;
 }
 
 .strut-mesh-img{
-    width: 400px;
+    width: 380px;
     object-fit: contain;
 }
 
@@ -281,7 +291,7 @@ figcaption{
 
 
 .strut-img{
-    width: 380px;
+    width: 360px;
     object-fit: contain;
 }
 
@@ -318,7 +328,7 @@ figcaption{
 }
 
 .engineering-drawing{
-    width: 550px;
+    width: 543px;
     object-fit: contain;
 }
 
@@ -388,7 +398,7 @@ figcaption{
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    padding: 25px 5px 10px 0px;
+    padding: 5px 5px 10px 0px;
     gap: 80px;
 }
 
@@ -405,9 +415,9 @@ figcaption{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
-    padding: 25px 0px 10px 0px;
-    gap: 100px;
+    flex-flow: wrap;
+    padding: 5px 0px 10px 0px;
+    gap: 30px;
 }
 
 .strut-img-grid{
@@ -415,11 +425,15 @@ figcaption{
     align-items: center;
     justify-content: space-between;
     flex-flow: wrap;
-    gap: 25px;
+    gap: 45px;
 }
 
 .machining-cover-img{
-    margin-left: 120px;
+    margin-left: 180px;
+}
+
+.flutter-cover-img{
+    margin-right: 6vw;
 }
 
 .strut-img-grid-2{
@@ -428,7 +442,7 @@ figcaption{
     justify-content: space-between;
     flex-flow: wrap;
     margin-right: 100px;
-    gap: 120px;
+    gap: 130px;
 }
 
 .lower-airframe-grid{
@@ -436,7 +450,7 @@ figcaption{
     align-items: center;
     justify-content: space-between;
     flex-flow: wrap;
-    padding: 25px 0px 0px 0px;
+    padding-top: 80px;
     gap: 30px;
 }
 
@@ -561,8 +575,8 @@ figcaption{
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        gap: 100px;
-        padding-left: 30px;
+        gap: 80px;
+        padding: 10px 30px 60px 0px;
     }
 
     h1{
@@ -837,7 +851,7 @@ figcaption{
     }
 
     .project-img{
-        height: 28vh;
+        height: 29vh;
         object-fit: contain;
         padding-left: 10px;
     }
@@ -848,7 +862,7 @@ figcaption{
     }
 
     .strut-mesh-img{
-        height: 23vh;
+        height: 25vh;
         object-fit: contain;
         padding-left: 35px;
     }
@@ -861,7 +875,7 @@ figcaption{
 
         
     .machining-cover-img{
-        margin-left: 40px;
+        margin-left: 25vw;
     }
 
     .photography-img{
@@ -959,7 +973,7 @@ figcaption{
         justify-content: space-between;
         flex-direction: column;
         padding: 10px 200px 50px 50px;
-        margin-left: 15px;   
+        margin-left: 5px;   
     }
 
     .landscape{
@@ -970,6 +984,10 @@ figcaption{
     .image{
         height: 200px; /* Width will adjust automatically to maintain aspect ratio */
         object-fit: contain;
+    }
+
+    .flutter-cover-img{
+        margin-left: 6vw;
     }
 
     .image-2{

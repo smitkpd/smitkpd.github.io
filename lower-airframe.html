@@ -31,10 +31,9 @@
                     <h2 class="subtitle"> (Jan - July 2023) </h2>
     
                     <h3> Introduction </h3>
-                        <p> As the Responsible Engineer, I owned the design, analysis and integration of the Lower Airframe in the Structures Team.
-                            I managed and guided a team of 2-3 engineers to CAD components and prepare stress hand calculations. Additionally, this
-                            position pushed me to communicate design and functional intent of parts with other sub-teams (Fluids and Avionics), and iterate design
-                            for smooth integration.
+                        <p> As the Responsible Engineer, I owned the design, analysis and integration of the Lower Airframe in the Structures Team. I modeled the assembly in NX CAD, evaluated stress and buckling through
+                            hand calculations in MATLAB, prepared FEA in Ansys to evaluate stress concentrations for design optimization and created component engineering drawings with GD&T to convey functional intent for machining.
+                            Additionally, I managed and guided a team of 2-3 engineers to CAD components and prepare stress hand calculations.
                         </p>
                 </div>
                 <div class="lower-airframe-grid"> 
@@ -53,9 +52,11 @@
             <div class="project-div">
                 <div class="project-description"> 
                     <h3> Design </h3>
-                        <p> I chose an assymmetric T-cross-section for the strut (vertical structural member) to allow for airframe panel mounting on both sides, and fin attachment to the web.
+                        <p> I navigated <b> <span style="color: blanchedalmond"> layout files </span> </b> in CAD (Siemens NX) to
+                            model components and identified dimensional constraints imposed by other assemblies such as propellant tank bulkheads and the engine. For the strut (vertical structural member), 
+                            I chose an <b> <span style="color: blanchedalmond"> assymmetric T cross-section </span> </b> for the strut to allow for airframe panel mounting on both sides, and fin attachment to the web.
                             For fin design, I optimized dimensions (root and tip chord, thickness, span, etc) for stability margin off-the-rail using RASAero (open source 6DOF simulator),
-                            and critical flutter velocity (for which, I used a safety factor of 1.5x Max Mach). The strut length was driven by fin root chord and plumbing length of Fluid Systems in lower airframe.
+                            and critical flutter velocity (for which, I used a safety factor of 1.5x Max Mach).
                         </p>
                 </div>
 
@@ -75,12 +76,12 @@
             <div class="project-div">
                 <div class="project-description"> 
                     <h3> Analysis </h3>
-                        <p> I determined safety factors for max stress (compressive + bending), flexural and torsional buckling through hand calculations. I optimized the strut's cross-sectional
+                        <p> I determined <b> <span style="color: blanchedalmond">safety factors </span> </b> for max stress (compressive and bending), flexural and torsional buckling through hand calculations. I optimized the strut's cross-sectional
                             dimensions for reducing mass, under Safety Factor constraints (1.5 for axial stress, 2.0 for bending stress and 5.0 for buckling). 
                              <br> <br> 
                             
-                            Next, I created a FEM <i> (Finite Element Model) </i> of the struts in ANSYS to determine the Von Mises Stress distribution and Buckling safety factors. 
-                            The bolts were modeled as cylinders to reduce the simulation's computational cost. I conducted a mesh convergence study to ensure FEA results were not biased to mesh density,
+                            Next, I created a <b> <span style="color: blanchedalmond"> FEM </span> </b>  <i> (Finite Element Model) </i> of the struts in Ansys to determine the Von Mises Stress distribution and Buckling safety factors. 
+                            The bolts were modeled as cylinders to reduce the simulation's computational cost. I conducted a mesh convergence study to ensure FEA results were not biased on mesh density,
                             and validated results with hand calculations.
                         </p>
                 </div>
@@ -102,14 +103,16 @@
                 <div class="project-description-2"> 
                     <h3> Integration </h3>  
                     <p>
+
                         Since the lower airframe houses fluid systems (tubing, valves, Quick Disconnect ports, etc) and avionics equipment, I worked closely with
-                        responsible engineers on these teams to allow for <b> <span style="color: blanchedalmond"> ease of access and handling. </span> </b> For example, I ensured the strut thickness was optimized for
-                        wrench clearances (for plumbing work), and minimal edge distance for avionics mounting bolt holes for mass savings. <br> <br>
-                        
-                        Moreover, I created engineering drawings of the struts and fins, applying GD&T principles. Leveraging datum planes, I applied tighter tolerances on <b> <span style="color: blanchedalmond"> strut tab straightness </span> 
-                        </b> and <b> <span style="color: blanchedalmond"> fin surface flatness </span> </b> to meet fin misalignment requirements for the rocket's maximum roll rate. I also used material modifiers (specifically, MMC) 
+                        responsible engineers on Fluid Systems and Avionics to allow for <b> <span style="color: blanchedalmond"> ease of access and handling. </span> </b> For example, I ensured the strut thickness was optimized for
+                        wrench clearances (for plumbing work), and minimal edge distance for avionics mounting bolt holes for mass savings. I also communicated with responsible engineers for tank bulkheads and the injector to optimize 
+                        hole spacing for bolted connections and iterated the design for smooth integration. <br> <br>
+
+                        Moreover, I created engineering drawings of the struts and fins, applying GD&T principles. I applied tighter tolerances on <b> <span style="color: blanchedalmond"> strut tab straightness </span> 
+                        </b> and <b> <span style="color: blanchedalmond"> fin surface flatness </span> </b> to meet fin misalignment requirements for the rocket's max allowable roll rate. I also used material modifiers (specifically, MMC) 
                         for clearance holes at interfaces (strut to tank bulkhead and strut to fin) to allow for bonus tolerancing. I loved learning about how tolerancing and datum planes can be leveraged
-                        to convey the part's functional intent to machinists! </p>
+                        to convey the part's functional intent for machining! </p>
 
                     
                     <h3> Manufacturing </h3>
