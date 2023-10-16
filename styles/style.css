@@ -234,7 +234,8 @@ figcaption{
 }
 
 .laser-img{
-    margin-right: 100px;
+    height: 200px;
+    object-fit: contain;
 }
 
 .accelerometer-img{
@@ -376,6 +377,10 @@ figcaption{
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 80px 213.8px 5px;
+}
+
+.laser-fig{
+    margin-right: 0px;
 }
 
 .project-img-grid{
@@ -566,7 +571,7 @@ figcaption{
         align-items: center;
         flex-direction: column;
         gap: 80px;
-        padding: 10px 30px 60px 8px;
+        padding: 10px 30px 60px 25px;
     }
 
     h1{
@@ -618,7 +623,7 @@ figcaption{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 5px 30px 0px 0px;
+        padding: 0px 30px 0px 0px;
         align-items: center;
     }
     
@@ -626,7 +631,7 @@ figcaption{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 5px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
         align-items: center;
     }
 
@@ -634,7 +639,7 @@ figcaption{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 5px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
         align-items: center;
     }
 
@@ -642,7 +647,7 @@ figcaption{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 5px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
         align-items: center;
     }
 
@@ -650,7 +655,7 @@ figcaption{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 10px 0px 190px 0px;
+        padding: 0px 0px 190px 0px;
         align-items: center;
     }
 
@@ -686,6 +691,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-flow: wrap;
+        padding-left: 10px;
         gap: 25px;
     }
 
@@ -694,7 +700,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-flow: wrap;
-        padding-left: 30px;
+        padding: 5px 0px 0px 70px;
         gap: 35px;
     }
 
@@ -703,7 +709,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        padding: 15px 0px 5px 15px;
+        padding: 15px 0px 5px 25px;
         gap: 10px;
     }
 
@@ -852,7 +858,7 @@ figcaption{
     }
 
     .strut-mesh-img{
-        height: 24vh;
+        height: 20vh;
         object-fit: contain;
     }
 
@@ -900,7 +906,7 @@ figcaption{
         justify-content: space-between;
         flex-flow: wrap;
         align-items: center;
-        padding: 2em 11vh 5vh 8vh;
+        padding: 2em 11vh 5vh 7vh;
         gap: 10vh;
     }
 
@@ -909,6 +915,7 @@ figcaption{
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
+        padding-top: 0px;
         gap: 20px;
     }
     
@@ -917,7 +924,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        margin-left: 90px;
+        margin-left: 120px;
         gap: 10px;
     }
 
@@ -946,7 +953,7 @@ figcaption{
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        padding: 2em 11vh 5vh 4.5vh;
+        padding: 2em 11vh 5vh 3.5vh;
         gap: 50px;
     }
 
@@ -964,7 +971,7 @@ figcaption{
         justify-content: space-between;
         flex-flow: wrap;
         align-items: center;
-        padding: 2em 11vh 5vh 8vh;
+        padding: 2em 11vh 5vh 6vh;
         gap: 10vh;
     }
     
@@ -984,10 +991,10 @@ figcaption{
     }
 
     .laser-img{
-        margin-right: 45px;
+        height: 150px;
+        object-fit: contain;
     }
-    
-    
+
     .image{
         height: 200px; /* Width will adjust automatically to maintain aspect ratio */
         object-fit: contain;
