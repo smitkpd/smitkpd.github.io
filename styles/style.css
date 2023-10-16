@@ -680,6 +680,14 @@ figcaption{
         align-items: center;
     }
 
+    .project-div-6{
+        display: flex;
+        align-items: center;
+        flex-flow: wrap;
+        justify-content: space-between;
+        padding: 0px 20px 250px 0px;
+    }
+
     .lower-airframe-grid{
         display: flex;
         align-items: center;
@@ -747,7 +755,7 @@ figcaption{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 15px 20px 30px 30px;
+        padding: 15px 20px 30px 15px;
         gap: 5px;
     }
     
@@ -806,7 +814,6 @@ figcaption{
     .project-description{
         margin-right: 0px;
         width: 105%;
-        margin-left: 20px;
         padding-bottom: 20px;
     }
     
