@@ -398,7 +398,7 @@ figcaption{
     justify-content: space-between;
     flex-flow: wrap;
     padding: 25px 35px 5px 0px;
-    gap: 40px;
+    gap: 30px;
 }
 
 .wind-tunnel-img-grid{
@@ -416,7 +416,7 @@ figcaption{
     justify-content: space-between;
     flex-flow: wrap;
     padding: 0px 20px 10px 0px;
-    gap: 40px;
+    gap: 30px;
 }
 
 .wind-tunnel-img-grid-2{
