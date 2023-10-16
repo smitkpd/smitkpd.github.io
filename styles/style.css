@@ -339,7 +339,7 @@ figcaption{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 50px 35px 5px;
+    padding: 10px 20px 35px 5px;
 }
 
 .profile-div{
