@@ -702,7 +702,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-flow: wrap;
-        margin-left: 115px;
+        margin-left: 50px;
         gap: 0px;
     }
 
@@ -900,7 +900,7 @@ figcaption{
 
         
     .machining-cover-img{
-        margin-left: 18vw;
+        margin-left: 16vw;
     }
 
     .strut-mesh-cover-img{
