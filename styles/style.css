@@ -511,8 +511,8 @@ figcaption{
     align-items: center;
     justify-content: space-between;
     flex-flow: wrap;
-    padding: 0px 20px 30px 20px;
-    gap: 60px;
+    padding: 0px 80px 30px 20px;
+    gap: 10px;
 }
 
 .project-vid-grid{
