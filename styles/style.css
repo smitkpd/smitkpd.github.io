@@ -730,7 +730,7 @@ figcaption{
         align-items: center;
         justify-content: space-between;
         flex-flow: wrap;
-        padding: 5px 0px 0px 70px;
+        padding: 5px 0px 0px 50px;
         gap: 35px;
     }
 
@@ -959,7 +959,7 @@ figcaption{
     }
 
     .wind-tunnel-img{
-        height: 250px;
+        height: 220px;
         object-fit: contain;
     }
 
@@ -1028,7 +1028,7 @@ figcaption{
     
 
     .laser-img{
-        height: 170px;
+        height: 150px;
         object-fit: contain;
     }
 
@@ -1040,6 +1040,10 @@ figcaption{
     .image-2{
         height: 250px; /* Width will adjust automatically to maintain aspect ratio */
         object-fit: contain;
+    }
+
+    .laser-fig{
+        margin-left: 150px;
     }
 
     .profile-img{
