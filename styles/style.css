@@ -457,8 +457,8 @@ figcaption{
     align-items: center;
     justify-content: space-between;
     flex-flow: wrap;
-    margin-right: 100px;
-    gap: 130px;
+    padding-top: 50px;
+    gap: 50px;
 }
 
 .lower-airframe-grid{
