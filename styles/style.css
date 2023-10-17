@@ -169,7 +169,7 @@ ul{
 }
 
 .stress-img{
-    width: 530px;
+    width: 515px;
     object-fit: contain;
 }
 
@@ -270,7 +270,7 @@ figcaption{
 }
 
 .strut-portrait-img{
-    width: 390px;
+    width: 400px;
     object-fit: contain;
 }
 
@@ -287,7 +287,7 @@ figcaption{
 
 
 .project-img-3{
-    width: 430px;
+    width: 440px;
     object-fit: contain;
 }
 
@@ -494,7 +494,7 @@ figcaption{
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding-top: 10px;
+    padding: 10px 20px 0px 0px;
 }
 
 .project-img-grid-4{
@@ -512,7 +512,7 @@ figcaption{
     justify-content: space-between;
     flex-flow: wrap;
     padding: 0px 10px 10px 0px;
-    gap: 10px;
+    gap: 30px;
 }
 
 .project-vid-grid{
@@ -832,7 +832,6 @@ figcaption{
     }
 
     .project-description-4{
-        margin-right: 0px;
         width: 105%;
         margin-left: 20px;
         padding-bottom: 10px;
