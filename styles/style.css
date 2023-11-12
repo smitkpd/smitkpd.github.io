@@ -179,7 +179,7 @@ ul{
     justify-content: space-between;
     flex-flow: wrap;
     align-items: center;
-    padding: 2em 11vh 5vh 11vh;
+    padding: 1em 11vh 2.5em 11vh;
     gap: 30px;
 }
 
@@ -340,6 +340,14 @@ figcaption{
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 35px 35px 5px;
+}
+
+.photo-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 11vh 5vh 11vh;
 }
 
 .profile-div{
@@ -551,6 +559,11 @@ figcaption{
 .project-description-5{
     margin-right: 5px;
     width: 100%;
+}
+
+.photo-description{
+    width: 100%;
+    padding: 1em 1vh 0 1vh;
 }
 
 .horiz_section{
