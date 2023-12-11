@@ -30,15 +30,22 @@
                     <h1> Ansys: Mesh Testing Intern </h1>
                     <h2 class="subtitle"> (Aug - Dec 2023) </h2>
                     
-                    <h3> Axisymmetric meshing automation</h3>
-                        <p> As one of my first projects at Ansys, I automated testing of the Axisymmetric Sweep meshing algorithm
-                            to reduce time associated with evaluating regression tests manually. Specifically, I wrote a Python script which detects mesh nodes, computes how well they
-                            conform to a geometry's circumference, and adjusts Sweep number of divisions accordingly. This saved time by <span style="color: blanchedalmond"> <b> 30+ hours for testing 1000+ CAD files. </b> </span> Moreover,
-                            it ensured the mesh was optimized for each geometry, thus increasing the success rate of mesh tests, which would have otherwise failed with default mesh settings.
+                    <h3> Automatated testing of Axisymmetric Meshing</h3>
+                        <p> As one of my first projects at Ansys, I automated testing of a detection feature for 1400+ Axisymmetric bodies, 
+                            as well as evaluation of Axisymmetric meshing. Specifically, I wrote a Python script which leverages Mechanical APIs
+                            to import geometry, generate and validate mesh for various geometries. I reduced test runtime from 30+ hours to 5 hours,
+                            enabling the Development team to rapidly improve their feature.
+                            
+                            Additionally, some of the tests required manual intervention to improve the mesh for certain bodies. I implemented an algorithm
+                            which checks how well nodes conform to a geometry's circumference, and automatically improves the mesh, increasing test success rate by 39%.
                         </p>
 
-                    <h3> Regression test automation </h3>
-                        <p> Currently, I am driving the migration of all JavaScript mesh test files to Python, for reducing total number of regression tests. I am acheiving this by
+                    <h3> Migration of JavaScript mesh regression tests to Python </h3>
+                        <p> There are thousands of regression tests which ensure stability of mesh algorithms after changes to the source code. I developed a Python workflow to
+                            compile 100+ JavaScript test files per mesh algorithm into a single Python to enable faster debugging and more robust mesh validation. First, I parsed through
+                            JavaScript and XML files to retrieve test commands and target mesh metrics, then mapped them to Ansys Mechanical APIs using Python dictionaries, 
+                            
+
                             leveraging APIs in Ansys Mechanical to automate the following process: geometry import, face/edge selections, mesh method application and mesh evaluation (element quality, mesh volume tolerance, etc.)
                             I learned how to apply regular expressions, use Python dictionaries and navigate file dependencies to reduce test runtime, and create an efficient automated workflow with Python.
                         </p>
