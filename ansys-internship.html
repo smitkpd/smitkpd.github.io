@@ -31,43 +31,31 @@
                     <h2 class="subtitle"> (Aug - Dec 2023) </h2>
                     
                     <h3> Automatated testing of Axisymmetric Meshing</h3>
-                        <p> As one of my first projects at Ansys, I automated testing of a detection feature for <b> <span style="color: blanchedalmond"> 1400+ Axisymmetric bodies, </span> </b>  
-                            as well as evaluation of Axisymmetric meshing. Specifically, I wrote a Python script which leverages Ansys Mechanical APIs
-                            to import geometry, generate mesh and validate mesh element count. I reduced test runtime from <b> <span style="color: blanchedalmond"> 30+ hours to 5 hours, </span> </b>
-                            enabling the Development team to rapidly improve their feature. <br> <br>
+                        <p> As one of my first projects at Ansys, I automated testing of a detection feature for 1400+ Axisymmetric bodies, 
+                            as well as evaluation of Axisymmetric meshing. Specifically, I wrote a Python script which leverages Mechanical APIs
+                            to import geometry, generate and validate mesh for various geometries. I reduced test runtime from 30+ hours to 5 hours,
+                            enabling the Development team to rapidly improve their feature.
                             
                             Additionally, some of the tests required manual intervention to improve the mesh for certain bodies. I implemented an algorithm
-                            which checks how well nodes conform to a geometry's circumference, and automatically improves the mesh, increasing test success rate by <b> <span style="color: blanchedalmond"> 39% </span> </b>
+                            which checks how well nodes conform to a geometry's circumference, and automatically improves the mesh, increasing test success rate by 39%.
                         </p>
 
                     <h3> Migration of JavaScript mesh regression tests to Python </h3>
-                        <p> There are thousands of regression tests which ensure stability of mesh algorithms as the source code is edited. I developed a Python workflow to
-                            compile <b> <span style="color: blanchedalmond"> 100+ JavaScript test files </span> </b> per mesh algorithm into a <b> <span style="color: blanchedalmond"> single Python file </span> </b>to enable faster debugging and more robust mesh validation. 
-                            I rigorously documented my approach and scripts to enable my team to build upon my work for migrating other mesh tests to Python. <br> <br> 
+                        <p> There are thousands of regression tests which ensure stability of mesh algorithms after changes to the source code. I developed a Python workflow to
+                            compile 100+ JavaScript test files per mesh algorithm into a single Python to enable faster debugging and more robust mesh validation. First, I parsed through
+                            JavaScript and XML files to retrieve test commands and target mesh metrics, then mapped them to Ansys Mechanical APIs using Python dictionaries, 
                             
-                            <b> <span style="color: blanchedalmond"> Key Takeaways:- </span> </b> <br>
-                            
-                            <ul class="pointers"> 
-                                <li class="bullet_point"> <p> Regular expressions to extract test commands and target mesh metrics from JavaScript and XML files  </p></li>
-                                <li class="bullet_point"> <p> Python dictionaries to organize and map commands to Ansys Mechanical APIs </p> </li>
-                                <li class="bullet_point"> <p> Evaluating node and element placement for contact regions, welds and beam modeling </p> </li>
 
-                            </ul>
+                            leveraging APIs in Ansys Mechanical to automate the following process: geometry import, face/edge selections, mesh method application and mesh evaluation (element quality, mesh volume tolerance, etc.)
+                            I learned how to apply regular expressions, use Python dictionaries and navigate file dependencies to reduce test runtime, and create an efficient automated workflow with Python.
                         </p>
                 </div>
 
                 <div class="project-img-grid-2">
-                    
-                    <img src="images/python.png" class="logo-img" alt="Python Logo">
-                    <img src="images/js_logo.png" class="logo-img" alt="Python Logo">
-                    <img src="images/regex-logo.png" class="logo2-img" alt="Python Logo">
-
                     <figure> 
                         <img src="images/ansys-nodes.jpg" class="project-img-4" alt="Mesh nodes">
-                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Nodes for Axisymmetric meshing </figcaption>
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Nodes for Axisymmetric sweep meshing </figcaption>
                     </figure>
-
-                    
                 </div>
             </div>
         </div>

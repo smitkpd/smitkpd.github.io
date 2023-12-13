@@ -34,7 +34,7 @@
                         <!-- Elaborate description with bullet points -->
                         <p> For the FEM of upper airframe struts, I improved the mesh and bolt contact modeling, as well as conducted a mesh convergence study.
                             Sharp transitions of tetrahedral mesh elements at the bolt holes led to unrealistically high stresses, giving a Safety Margin less than zero. To resolve this,
-                            I refined the mesh around bolt holes using a Sphere of Influence. Additionally, I experimented with different bolt
+                            I refined the mesh around bolt holes using a Sphere of Influence control and non-linear material properties. Additionally, I experimented with different bolt
                             diameters and strut flange thicknesses to reduce stress concentrations. Lastly, I validated stress in vicinity of bolt holes with hand calculations.
                         </p>
                         <h3> Mesh convergence </h3>  
@@ -48,7 +48,7 @@
                 <div class="fea-mesh-grid"> 
                     <figure> 
                         <img src="images/psp/strut-mesh_2.jpg" class="strut-portrait-img" alt="Strut mesh">
-                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Front view: Mesh refinement <br> around strut bolt holes  </figcaption>
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Front view: Mesh refinement around bolt holes  </figcaption>
                     </figure>
 
                     <figure> 
@@ -57,12 +57,12 @@
                     </figure>
 
                     <figure class="mesh-graph-fig"> 
-                        <img src="images/psp/mesh-converge-upper-stress.jpg" class="fea-portrait-img" alt="Mesh convergence">
+                        <img src="images/psp/mesh-converge-upper-stress.jpg" class="strut-portrait-img" alt="Mesh convergence">
                         <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Von Mises stress vs. element count </figcaption>
                     </figure>
 
                     <figure class="mesh-graph-fig"> 
-                        <img src="images/psp/mesh-converge-upper-bolt-hole-stress.jpg" class="fea-portrait-img" alt="Mesh convergence">
+                        <img src="images/psp/mesh-converge-upper-bolt-hole-stress.jpg" class="strut-portrait-img" alt="Mesh convergence">
                         <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Bolt hole stress vs. element count </figcaption>
                     </figure>
                 </div>

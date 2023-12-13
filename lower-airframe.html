@@ -32,7 +32,7 @@
     
                     <h3> Introduction </h3>
                         <p> As the Responsible Engineer, I owned the design, analysis and integration of the Lower Airframe in the Structures Team. I modeled the assembly in NX CAD, evaluated stress and buckling through
-                            hand calculations in MATLAB, prepared FEA in Ansys to evaluate stress concentrations for design optimization and created component engineering drawings with GD&T to convey functional intent for manufacturing.
+                            hand calculations in MATLAB, prepared FEA in Ansys to evaluate stress concentrations for design optimization and created component engineering drawings with GD&T to convey functional intent for machining.
                             Additionally, I managed and guided a team of 2-3 engineers to CAD components and prepare stress hand calculations.
                         </p>
                 </div>
@@ -54,9 +54,9 @@
                     <h3> Design </h3>
                         <p> I navigated <b> <span style="color: blanchedalmond"> layout files </span> </b> in CAD (Siemens NX) to
                             model components and identified dimensional constraints imposed by other assemblies such as propellant tank bulkheads and the engine. For the strut (vertical structural member), 
-                            I chose an <b> <span style="color: blanchedalmond"> assymmetric T cross-section </span> </b> to allow for airframe panel mounting on both sides, and fin attachment to the web.
+                            I chose an <b> <span style="color: blanchedalmond"> assymmetric T cross-section </span> </b> for the strut to allow for airframe panel mounting on both sides, and fin attachment to the web.
                             For fin design, I optimized dimensions (root and tip chord, thickness, span, etc) for stability margin off-the-rail using RASAero (open source 6DOF simulator),
-                            and critical flutter velocity.
+                            and critical flutter velocity (for which, I used a safety factor of 1.5x Max Mach).
                         </p>
                 </div>
 
@@ -76,12 +76,12 @@
             <div class="project-div">
                 <div class="project-description"> 
                     <h3> Analysis </h3>
-                        <p> I computed <b> <span style="color: blanchedalmond"> safety factors </span> </b> for maximum stress, flexural and torsional buckling through hand calculations. Then, I optimized the strut's cross-section
-                            for reduced mass. 
+                        <p> I determined <b> <span style="color: blanchedalmond">safety factors </span> </b> for max stress (compressive and bending), flexural and torsional buckling through hand calculations. I optimized the strut's cross-sectional
+                            dimensions for reducing mass, under Safety Factor constraints (1.5 for axial stress, 2.0 for bending stress and 5.0 for buckling). 
                              <br> <br> 
                             
-                            Next, I created a <b> <span style="color: blanchedalmond"> FEM </span> </b>  <i> (Finite Element Model) </i> of the struts in Ansys to determine the Von Mises Stress distribution and Eigenvalue Buckling safety factors. 
-                            I conducted a mesh convergence study to ensure FEA results were not biased on mesh density,
+                            Next, I created a <b> <span style="color: blanchedalmond"> FEM </span> </b>  <i> (Finite Element Model) </i> of the struts in Ansys to determine the Von Mises Stress distribution and Buckling safety factors. 
+                            I modeled the bolts as cylinders to reduce the simulation's computational cost. I conducted a mesh convergence study to ensure FEA results were not biased on mesh density,
                             and validated results with hand calculations.
                         </p>
                 </div>
