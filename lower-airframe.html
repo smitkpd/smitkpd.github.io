@@ -112,13 +112,7 @@
                         Moreover, I created engineering drawings of the struts and fins, applying GD&T principles. I applied tighter tolerances on <b> <span style="color: blanchedalmond"> strut tab straightness </span> 
                         </b> and <b> <span style="color: blanchedalmond"> fin surface flatness </span> </b> to meet fin misalignment requirements for the rocket's max allowable roll rate. I also used material modifiers (specifically, MMC) 
                         for clearance holes at interfaces (strut to tank bulkhead and strut to fin) to allow for bonus tolerancing. I loved learning about how tolerancing and datum planes can be leveraged
-                        to convey the part's functional intent for machining! </p>
-
-                    
-                    <h3> Manufacturing </h3>
-                    <p> During early stages of design, I accounted for endmill tool radius to mininmize spacing between the fin tab and panel mounting holes on the struts.                        
-                        For the fins, after making preliminary CAM <i> (Computer Aided Manufacturing) </i> in Fusion 360, I realized that having the leading and trailing edges protrude from the fin tab 
-                        would be better for the chamfer tool to clear the tip, as opposed to those edges being within the fin tab boundary.
+                        to convey the part's functional intent for machining! 
                     </p>
                 </div>
 
@@ -133,6 +127,68 @@
                         <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Fin Drawing </figcaption>
                     </figure>
                 </div>
+            </div>
+            <div class="project-div">
+                <div class="project-description-2"> 
+                    <h3> Manufacturing </h3>
+                    <p> In the early stages of design, I accounted for endmill tool radius to mininmize spacing between the fin tab and panel mounting holes on the struts.
+                        To determine an optimal manufacturing strategy for the fins, I CNC machined 3 subscale fins to test different fixturing and probing approaches:-
+                        
+                        <ul class="bullet-points">
+                            <li> <p> &#x2022; <span style="color: blanchedalmond"> <b> Subscale fin #1: </b> </span> Machined slots on the first operation, 
+                                then flipped the stock and probed these slots to align the fin's front and back sides. Didn't achieve feature alignment,
+                                because of using a long 1/8" tool, which led to tool vibrations and deviation in slot geometry (Fig. 1) - affecting the probing operation.
+                                Bad surface finish on one face, because of using a large diameter face mill for second operation - where stock was not well supported (Fig. 2)
+                            </p> </li>
+
+                            <li> <p> &#x2022; <span style="color: blanchedalmond"> <b> Subscale fin #2: </b> </span> Dial indicated the slots to within 
+                                0.1 - 0.3 thousandth's of an inch, however, misalignment between front and back sides was still present. This might have between
+                                due to probe tip not contacting the same spot on the slot as first operation - could have been fixed in CAM. Validated no stock deflections
+                                when machining the leading and trailing edges with ball endmill, due to them being a tapered, thin edge. (Fig. 3)
+                            </p> </li>
+
+                            <li> <p> &#x2022; <span style="color: blanchedalmond"> <b> Subscale fin #3: </b> </span> Implemented ID expansion pins, which thread into
+                                sacrificial plate, and clamp the stock by expanding. Learned how to hit a tight tolerance for hole inner diameter by adjusting tool diameter
+                                offsets in machine, to provide a locational clearance fit for ID expansions pin collar. Achieved good feature alignment and only had to probe
+                                the sacrificial plate (fixed reference) once - great repeatibility for machining 3 flight scale fins in one go.
+                            </p> </li>
+                        </ul>                        
+                    </p>
+                </div>
+
+                <div class="project-img-grid">
+                    <figure>
+                        <img src="images/Subscale fin 1/fin_1_op1.png" class="machining-img" alt="Fin # 1, OP1 drawing">
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Subscale fin #1: Operation 1 Setup </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/Subscale fin 1/fin_1_misalignment.png" class="laser-img" alt="Fin #1 misalignment">
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Subscale fin #1: Misalignment between two sides </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="machining-img-grid">
+                <figure>
+                    <img src="images/Subscale fin 2/op2_tabs.png" class="machining-img-2" alt="Fin #2 Tabs">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Subscale fin #2: Operation 2 Setup </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Subscale fin 2/finished_fin.jpg" class="project-img-2" alt="Fin #2 finished">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Subscale fin #2: Finished </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Subscale fin 3/IMG_0020 (1).jpg" class="project-img" alt="Fin #3 Setup">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Subscale fin #3: ID Expansion Pins <br> clamping stock </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Subscale fin 3/IMG_0024 (1).jpg" class="project-img" alt="Fin #3 Finished">
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Subscale fin #3: Finished</figcaption>
+                </figure>
             </div>
 
             <div class="footer">
