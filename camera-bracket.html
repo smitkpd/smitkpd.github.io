@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head> <!-- CSS libraries go in here -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/style.css" rel="stylesheet" />
+        <title> Smit Kapadia's Website </title>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <!-- Div allows for the name and menu to be in-line -->
+        <nav class="navbar">
+        
+            <div class="name">
+                <text> Smit Kapadia </text>
+            </div>
+        
+            <div class="menu">
+                <ul class="list">
+                    <li class="list-items"> <a href="index.html"> About </a></li>
+                    <li class="list-items"> <a href="engineering.html"> Engineering </a></li>
+                    <li class="list-items"> <a href="photography.html"> Photography </a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="project">
+            <div class="project-div">
+                <div class="project-description"> 
+                    <h1> Camera L-Bracket </h1>
+                    <h2 class="subtitle"> (May 2024) </h2>
+    
+                    <h3> Design </h3>
+                        <p> I wanted to design a custom L-Bracket that would mount my DSLR in vertical and horizontal orientations on a tripod.
+                            The wide slots in the bracket make it not only lightweight, but also provide access to battery and microphone ports on the DSLR.
+                            I chose to make the brackets from aluminum, because I wanted to have them last a long time, without deformation of the groove geometry
+                            (which would be more likely with a 3D print). Initially, with preliminary CAM, I thought machining the entire bracket as one piece
+                            would require more setups than machining two parts and assembling them. However, in hindsight, the former would have required
+                            less probing operations, reducing manufacturing time.                         
+                        </p>
+                    
+                    <h3> Prototyping </h3>
+                    <p> In order to minimize brackets' wall thickness, I had to make the dovetail grooves shallower than conventional designs. To test if these
+                        grooves firmly clamp to the tripod, I made a 3D printed prototype. The dovetail grooves worked well, and I adjusted the bottom bracket's
+                        thickness to allow the 1/4" screw to fully thread into the camera for maximizing clamping force. Additionally, I made the slot on the 
+                        side bracket longer to allow for easy access of the DSLR's side ports.                    
+                    </p>
+
+                    <h3> CNC Machining </h3>
+                    <p> For the two brackets, I milled out the slots and drilled the attachment holes. This was my first time using the a dovetail endmill, where
+                        I calculated the feeds and speeds based on the tool vendor's suggested feed per tooth.                  
+                    </p>
+                </div>
+                <div class="lower-airframe-grid"> 
+                    <figure> 
+                        <img src="images/psp/strut-fin-attachment.jpg" class="strut-img" alt="L-Bracket CAM Program ">
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> L-Bracket CAM Program </figcaption>
+                    </figure>
+                
+                    <figure> 
+                        <img src="images/psp/strut-assem-cross-sec.jpg" class="lower-airframe-img" alt="Assembled L-Bracket">
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Assembled L-Bracket </figcaption>
+                    </figure>
+                </div> 
+            </div>       
+
+            <div class="footer">
+                <p class="footer-text"> &#169; Smit Kapadia &#160; &#160; &#160; Written with HTML and CSS libaries! Code on <a href="https://github.com/smitkpd/smitkpd.github.io" style="color: rgb(211, 182, 14)"> Github </a>
+                </p>
+            </div>
+
+        </div>
+    </body>
+</html>
