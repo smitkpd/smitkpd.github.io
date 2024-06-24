@@ -254,7 +254,7 @@ figcaption{
 }
 
 .lower-airframe-img{
-    height: 260px;
+    height: 255px;
     object-fit: contain;
 }
 
@@ -296,7 +296,7 @@ figcaption{
 
 
 .strut-img{
-    width: 360px;
+    width: 350px;
     object-fit: contain;
 }
 
@@ -595,7 +595,7 @@ figcaption{
     justify-content: space-between;
     flex-flow: wrap;
     padding: 20px 5px 5px 10px;
-    gap: 20px;
+    gap: 10px;
 }
 
 
