@@ -26,60 +26,175 @@
 
         <div class="project">
             <div class="project-div"> 
-                <div class="project-description-4">
-                    <h1> Learning CNC Machining </h1>
-                    <h2 class="subtitle"> (Aug 2022 - Feb 2023) </h2>
+                <div class="project-description-2">
+                    <h1> Parts for Purdue Space Program's Liquid Rocket </h1>
+                    <h2 class="subtitle"> (Jan 2024 - Present) </h2>
+                    
+                    <h3> Raceway Elbow Connector </h3>
+                    <p> I created CAM and CNC machined a raceway elbow connector, which bolts to the lower tank bulkhead and houses one end of the raceway.
+                        A challenging part of the machining process was determining the approach to clamping the part for making all the features, since only
+                        one side contained flat surfaces on opposite sides. I chose to machine the portion with the flat faces first (to use them as clamping surfaces later)
+                        However, I realized that milling out the slot would cause the part to deform under a clamping force of 40 lbs on the vice. So, the slot
+                        was machined in the very end. For the angled bolt holes, I first bored out holes with the stock rotated in a 5-Axis CNC mill, then drilled the holes.
+                        This was to prevent the drill tip from deflecting/getting damaged, as the drill tip wouldn't be perpendicular to the stock.
 
-                    <h3> Titan 2M </h3>
-                        <p> I machined this part on a Haas 2-Axis CNC Mill, as an introduction to CNC machining. It is a semi-complex part, containining 
-                            slot features and holes. I learned to program the 2D profile toolpaths and hole drilling in Fusion 360 CAM <i> (Computer Aided Machining). </i> 
-                            By prearing tools, workholding, securing stock in the machine and running the machine (under supervision), I gained an understanding of how tool clearances
-                            and external part profile/features affect ease-of-manufacturability and machine time.
-                        </p>
+                        Moreover, I had to get creative with making sketches in the CAD, to manually select specific contours for generating toolpaths in CAM. There were several
+                        roughing and finishing operations, with the tool approaching from the side and top of the part.
 
-                    <h3> Titan 9M </h3>
-                        <p> This is a more complex learning part, with 3D curved profiles and counterbore operations. First, I used a flat end mill to remove material and create steps for the 3D curved surface,
-                            then I used a ball end mill to get a smooth surface from the steps.
-                            Further, I learned how to efficiently select contour paths to reduce machine time, thus cost. I was quite happy with the final result!
-                        </p>
+                        Lastly, upon feedback from a teammate, I designed an Aluminum support structure that would be clamped in the vice, for milling out a slot.
+                    </p>
                 </div>
-
+                
                 <div class="machining-img-grid">
                     <figure> 
-                        <img src="images/machining/titan_2M.jpg" class="slender-img-mfg" alt="Titan 2M machining">
-                        <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Titan 2M </figcaption>
+                        <img src="images/Lower raceway elbow/angled_holes.png" class="lower-airframe-img" alt="Raceway elbow">
+                        <figcaption class="project-img-caption-2", style="color:  rgb(203, 198, 198)"> Finished raceway elbow </figcaption>
+                    </figure>
+                    
+                    <figure> 
+                        <img src="images/Lower raceway elbow/clamping_surf.png" class="wind-tunnel-img-2" alt="Deformed walls">
+                        <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Deformed walls after clamping part </figcaption>
+                    </figure>
+
+                    <figure>
+                        <video controls="controls" width="430.5px" height="264px">
+                            <source src="images/Lower raceway elbow/IMG_8494.MOV" type="video/mp4" />
+                        </video>
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Roughing operation </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="machining-img-grid-2">
+                <figure> 
+                    <img src="images/Lower raceway elbow/drilling_holes.png" class="project-img" alt="Drilling holes">
+                    <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Boring out holes before drilling </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/Lower raceway elbow/side_adaptive.png" class="project-img" alt="Side adaptive">
+                    <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Roughing operation from the side of the vice </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/Lower raceway elbow/top_down_adaptive.png" class="project-img" alt="Toolpaths">
+                    <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Manually created toolpaths <br> in Fusion 360 CAM </figcaption>
+                </figure>
+
+                <figure> 
+                    <img src="images/Lower raceway elbow/support_structure.png" class="project-img" alt="Support structure">
+                    <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Part bolted to support structure <br> for milling out slot </figcaption>
+                </figure>
+            </div>
+
+            <div class="project-div"> 
+                <div class="project-description-3">
+                    <h3> Launch Lugs </h3>
+                    <p>
+                        This was the first part where I operated a HAAS 3-Axis CNC mill entirely independently after getting trained. I machined the launch lugs
+                        in two operations, one half at a time, due to tool length limitations. For my first attempt, I probed off the stock's surface (unreliable
+                        reference surface), leading to misalignment between the two halves. On my second attempt, I aligned the part with the vice's edge and probed
+                        off the vice edge - which singificantly reduced feature misalignment. Major takeaway here was to always probe off a machined surface for aligning
+                        features between operations.
+                    </p>
+                </div>
+
+                <div class="machining-img-grid-2">
+                    <figure> 
+                        <img src="images/Launch Lugs/launch_lugs_op1.JPG" class="slender-img" alt="OP1">
+                        <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Operation 1 finished </figcaption>
                     </figure>
 
                     <figure> 
-                        <img src="images/machining/titan-9m.jpg" class="slender-img-mfg" alt="Titan 9M machining">
-                        <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Titan 9M </figcaption>
+                        <img src="images/Launch Lugs/launch_lugs.jpg" class="slender-img" alt="Finished launch lugs">
+                        <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Finished launch lugs </figcaption>
                     </figure>
                 </div>
             </div>
 
             <div class="project-div"> 
-                <div class="project-description-5">
-                    <h3> Closing thoughts </h3>
-                    <p> By creating CAM and machining these parts, I learned how to adjust toolpaths and tool entry points to reduce machine time, as well as optimize stock dimensions.
-                        I also got a sense of making design considerations (depth of slots, fillets, chamfers, etc.) for ease of manufacturability.
+                <div class="project-description-2">
+                    <h3> Valve Actuator Side Panels </h3>
+                    <p>
+                        These are side panels that are part of a larger assembly for a valve actuator. The hole in the middle required a locational interference
+                        fit with a bearing sleeve. To achieve this tolerance, I first bored out majority of the hole and then ran multiple contour passes. Between each
+                        contour pass, I measured the hole's inner diameter with a precision micrometer and adjusted the tool diameter offset in the machine console.
+
+                        Additionally, for facing the stock on the bottom, I had to clamp the part in Kurt Vice. Since the final part's thickness was small, it bowed
+                        easily upon applying clamping force, thus I was unable to seat the parallels on both sides. I learned that its only important to seat the parallel
+                        at the fixed jaw, and that reducing the clamping force allowed the part to sit flush with this parallel. Due to low clamping force, I reduced the
+                        axial depth of cut of the milling operation to reduce cutting forces, thus lower the chances of the part ripping off the vice.
                     </p>
+                </div>
+
+                <div class="machining-img-grid-2">
+                    <figure>
+                        <video controls="controls" width="480px" height="270px">
+                            <source src="images/Acutator Side Panels/IMG_0156.MOV" type="video/mp4" />
+                        </video>
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Chamfering the edge </figcaption>
+                    </figure>
+
+                    <figure> 
+                        <img src="images/Acutator Side Panels/op2.png" class="project-img" alt="OP2">
+                        <figcaption class="project-img-caption-3", style="color: rgb(203, 198, 198)"> Operation 2 Setup </figcaption>
+                    </figure>
+
+                    <figure> 
+                        <img src="images/Acutator Side Panels/IMG_0157.jpg" class="project-img" alt="Finished">
+                        <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Finished side panels </figcaption>
+                    </figure>
                 </div>
             </div>
 
-            <div class="project-vid-grid">
-                <figure>
-                    <video controls="controls" width="576" height="720">
-                        <source src="images/machining/titan-2m.mp4" type="video/mp4" />
-                    </video>
-                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Titan 2M CAM </figcaption>
-                </figure>
+            <div class="project-div"> 
+                <div class="project-description-2">
+                    <h1> Beginner Parts </h1>
+                    <h2 class="subtitle"> (Aug 2022 - May 2023) </h2>
 
-                <figure>
-                    <video controls="controls" width="576" height="720">
-                        <source src="images/machining/titan--9m.mp4" type="video/mp4" />
-                    </video>
-                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Titan 9M CAM </figcaption>
-                </figure>
+                    <!---
+                    <h3> LEGO Brick </h3>
+                    <p> I CNC machined a LEGO brick, as part of PSP's manufacturing training. This has some semi-complex features to program CAM toolpaths for, such
+                        as a helix entry for milling out the inside and a finishing pass for getting a good surface finish.
+                    </p>
+                    -->
+
+                    <h3> Titan 9M </h3>
+                    <p> This is a part I made to complete training for Manufacturing Teaching Assistant at BIDC. I learned how to machine curved surfaces with a ball endmill,
+                        making counterbores and how to improve surface finish by reducing tool's axial depth of cut. I was quite happy with the final result!
+                    </p>
+
+                    <h3> Steel screw </h3>
+                    <p> As part of the CNC Lathe training, I made a steel screw. This involved facing and roughing the outside profile, grooving the slots, then a threading
+                        operation. I learned how to secure the stock in a three jaw chuck in the lathe, set up tools and probe them before beginning the machining operations.
+                    </p>
+                </div>
+
+                <div class="machining-img-grid-2">
+                    <figure>
+                        <video controls="controls" width="480px" height="270px">
+                            <source src="images/machining/titan_9M_op1.mp4" type="video/mp4" />
+                        </video>
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Titan 9M CAM </figcaption>
+                    </figure>
+                    
+                    <figure> 
+                        <img src="images/machining/titan_9M_finished.jpg" class="project-img" alt="Titan 9M machining">
+                        <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Titan 9M Finished </figcaption>
+                    </figure>
+
+                    <figure>
+                        <video controls="controls" width="480px" height="270px">
+                            <source src="images/machining/screw_CAM.mp4" type="video/mp4" />
+                        </video>
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Screw CAM </figcaption>
+                    </figure>
+
+                    <figure> 
+                        <img src="images/machining/screw_1.jpg" class="slender-img" alt="Titan 9M machining">
+                        <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Finished screw </figcaption>
+                    </figure>
+                </div>
             </div>
 
             <div class="footer">
