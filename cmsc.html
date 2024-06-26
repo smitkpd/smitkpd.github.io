@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head> <!-- CSS libraries go in here -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/style.css" rel="stylesheet" />
+        <title> Smit Kapadia's Website </title>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <!-- Div allows for the name and menu to be in-line -->
+        <nav class="navbar">
+        
+            <div class="name">
+                <text> Smit Kapadia </text>
+            </div>
+        
+            <div class="menu">
+                <ul class="list">
+                    <li class="list-items"> <a href="index.html"> About </a></li>
+                    <li class="list-items"> <a href="engineering.html"> Engineering </a></li>
+                    <li class="list-items"> <a href="photography.html"> Photography </a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="project">
+            <div class="project-div"> 
+                <div class="project-description-2">
+                    <h1> Heating Coil Experiment </h1>
+                    <h2 class="subtitle"> (May 2024 - Present) </h2>
+                    
+                    <p>
+                        At the Composites Manufacturing and Simulation Center (CMSC), I am working on embedding heating coils between layers of 3D printed tooling (for
+                        composite parts) to provide localized heating in different regions of the tooling. This is required for curing a part with varying thickness 
+                        and thermal conductivity.
+
+                        Specifically, I am responsible for characterizing filament temperature based on how much a heating coil is stretched. The following describes
+                        my approach to this problem:-
+                        
+                        <ul class="bullet-points">
+                            <li> <p> &#x2022; The filament temperature is proportional to the power dissipated by the coil -> related to coil's resistance -> 
+                                proportional to the equivalent straight length of the coil. To account for springback in the coil when stretched, I related the
+                                applied strain to plastic strain through hand calculations for coil deflection, based on Castigliano's theorem. Next, I computed
+                                the resistance for a reference section, based on its new pitch and straight wire length.
+
+                                To validate my calculations, I experimentally measured the final coil length after stretching it to a certain length. Additionally,
+                                I measured resistance using a multimeter. Fig. 2 shows that the experimental results followed the prediction quite well.
+                            </p> </li>
+                            <li> <p> &#x2022; Currently, I am validating the prediction for the coil's surface temperature with experimental results. I am computing
+                                the coil temperature using a 1D, steady-state heat transfer analysis, with convection and radiation. To measure the coil's temperature,
+                                I connected the coil to a variable power supply, and measured temperature using a thermal camera. I used Python to determine a median
+                                temperature, to avoid bias from hotspots in the coil.                          
+                                </p> </li>
+                        </ul> 
+                    </p>
+                </div>
+
+                <div class="machining-img-grid-2">
+                    <figure> 
+                        <img src="images/cmsc/experiment.png" class="machining-img" alt="Fig. 2">
+                        <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Coil Experiment </figcaption>
+                    </figure>
+
+                    <figure> 
+                        <img src="images/cmsc/coil_strain.jpg" class="engineering-drawing" alt="Fig. 2">
+                        <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Figure 2 </figcaption>
+                    </figure>
+                </div>
+
+                
+            </div>
+
+            <div class="footer">
+                <p class="footer-text"> &#169; Smit Kapadia &#160; &#160; &#160; Written with HTML and CSS libaries! Code on <a href="https://github.com/smitkpd/smitkpd.github.io" style="color: rgb(211, 182, 14)"> Github </a>
+                </p>
+            </div>
+            
+        </div>
+    </body>
+</html>
