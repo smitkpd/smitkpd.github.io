@@ -26,16 +26,28 @@
 
         <div class="project">
             <div class="project-div">
-                <div class="project-description"> 
+                <div class="project-description-5"> 
                     <h1> Purdue Space Program: Lower Airframe Responsible Engineer </h1>
                     <h2 class="subtitle"> (Jan - July 2023) </h2>
     
                     <h3> Introduction </h3>
-                        <p> As the Responsible Engineer, I owned the design, analysis and integration of the Lower Airframe in the Structures Team. I modeled the assembly in NX CAD, evaluated stress and buckling through
-                            hand calculations in MATLAB, prepared FEA in Ansys to evaluate stress concentrations for design optimization and created component engineering drawings with GD&T to convey functional intent for manufacturing.
-                            Additionally, I managed and guided a team of 2-3 engineers to CAD components and prepare stress hand calculations.
+                        <p> As the Responsible Engineer, I owned the design, analysis and integration of the Lower Airframe structure. I managed a team 
+                            of 2-3 engineers to CAD components and prepare stress hand calculations. Additionally, I presented the design and analysis
+                            to more experienced members and engineers from industry in a design review.
                         </p>
                 </div>
+            </div>       
+            
+            <div class="project-div">
+                <div class="project-description"> 
+                    <h3> Design </h3>
+                        <p> For the struts (vertical structural members), I chose a T-cross section to allow for fin and airframe panel attachment, as well as its high bending moment of inertia.
+                            To size the cross-section, I performed hand calculations for stress and buckling safety factors. Next, I modeled the assembly in CAD (Siemens NX)
+                            using layout files. For preliminary design of fins, I optimized dimensions (root and tip chord, thickness, span, etc) for stability margin using RASAero (open source 6DOF simulator),
+                            and critical flutter velocity (using hand calculations per NACA TN 4197).                
+                        </p>
+                </div>
+
                 <div class="lower-airframe-grid"> 
                     <figure> 
                         <img src="images/psp/strut-fin-attachment.jpg" class="strut-img" alt="Strut and Fin assembly">
@@ -47,54 +59,28 @@
                         <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Strut to Tank Bulkhead assembly side view </figcaption>
                     </figure>
                 </div> 
-            </div>       
-            
-            <div class="project-div">
-                <div class="project-description"> 
-                    <h3> Design </h3>
-                        <p> I navigated <b> <span style="color: blanchedalmond"> layout files </span> </b> in CAD (Siemens NX) to
-                            model components and identified dimensional constraints imposed by other assemblies such as propellant tank bulkheads and the engine. For the strut (vertical structural member), 
-                            I chose an <b> <span style="color: blanchedalmond"> assymmetric T cross-section </span> </b> to allow for airframe panel mounting on both sides, and fin attachment to the web.
-                            For fin design, I optimized dimensions (root and tip chord, thickness, span, etc) for stability margin off-the-rail using RASAero (open source 6DOF simulator),
-                            and critical flutter velocity.
-                        </p>
-                </div>
-
-                <div class="strut-img-grid"> 
-                    <figure> 
-                        <img src="images/psp/strut-mesh.jpg" class="project-img" alt="Strut Mesh">
-                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Strut mesh </figcaption>
-                    </figure>
-
-                    <figure> 
-                        <img src="images/psp/bolt-hole-mesh.jpg" class="strut-mesh-img" alt="Fin and Panel attachment mesh">
-                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Fin and Panel attachment mesh </figcaption>
-                    </figure>
-                </div>
             </div>
 
             <div class="project-div">
                 <div class="project-description"> 
                     <h3> Analysis </h3>
-                        <p> I computed <b> <span style="color: blanchedalmond"> safety factors </span> </b> for maximum stress, flexural and torsional buckling through hand calculations. Then, I optimized the strut's cross-section
-                            for reduced mass. 
-                             <br> <br> 
-                            
-                            Next, I created a <b> <span style="color: blanchedalmond"> FEM </span> </b>  <i> (Finite Element Model) </i> of the struts in Ansys to determine the Von Mises Stress distribution and Eigenvalue Buckling safety factors. 
-                            I conducted a mesh convergence study to ensure FEA results were not biased on mesh density,
-                            and validated results with hand calculations.
+                        <p> I created a FEM <i> (Finite Element Model) </i> of the struts in 
+                            Ansys to analyze stress concentrations at bolt holes and strut flanges. A challenge here was making the mesh finer to resolve
+                            stress artifacts, while ensuring the simulation runs resonably quickly. I experimented with various meshing controls (inflation layers,
+                            local element sizing, etc.) to find an optimal combination. I iterated bolt hole diameters and strut flange thicknesses to optimize for mass,
+                            while meeting required Safety Margins. Additionally, I conducted a mesh convergence study to ensure FEA results were not biased on mesh density.
                         </p>
                 </div>
 
-                <div class="strut-img-grid-2"> 
+                <div class="project-img-grid-2"> 
                     <figure> 
-                        <img src="images/psp/strut-vm-stress.jpg" class="slender-img" alt="Strut Von Mises Stress">
-                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Von Mises Stress </figcaption>
+                        <img src="images/psp/strut-mesh.jpg" class="lower-airframe-img" alt="Strut Mesh">
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Strut mesh </figcaption>
                     </figure>
         
                     <figure> 
-                        <img src="images/psp/lower-struts-buckling.jpg" class="slender-img" alt="Torsional buckling mode">
-                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Torsional Buckling Deformation </figcaption>
+                        <img src="images/psp/strut_fea.png" class="strut-img" alt="Stress concentrations">
+                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Stress concentrations at bolt holes </figcaption>
                     </figure>
                 </div>
             </div>
@@ -103,16 +89,14 @@
                 <div class="project-description"> 
                     <h3> Integration </h3>  
                     <p>
+                        I frequently communicated with Responsible Engineers on Fluid Systems and Avionics to account
+                        for clearances for fluid systems and mounting of avionics boards. For example, I optimized the strut's thickness
+                        based on minimal edge distance for bolt holes for avionics boards, resulting in mass savings. Further, I performed
+                        hand calculations for bolted joint design of strut to tank bulkhead and strut to injector interfaces. <br> <br>
 
-                        Since the lower airframe houses fluid systems (tubing, valves, Quick Disconnect ports, etc) and avionics equipment, I worked closely with
-                        responsible engineers on Fluid Systems and Avionics to allow for <b> <span style="color: blanchedalmond"> ease of access and handling. </span> </b> For example, I ensured the strut thickness was optimized for
-                        wrench clearances (for plumbing work), and minimal edge distance for avionics mounting bolt holes for mass savings. I also communicated with responsible engineers for tank bulkheads and the injector to optimize 
-                        hole spacing for bolted connections and iterated the design for smooth integration. <br> <br>
-
-                        Moreover, I created engineering drawings of the struts and fins, applying GD&T principles. I applied tighter tolerances on <b> <span style="color: blanchedalmond"> strut tab straightness </span> 
-                        </b> and <b> <span style="color: blanchedalmond"> fin surface flatness </span> </b> to meet fin misalignment requirements for the rocket's max allowable roll rate. I also used material modifiers (specifically, MMC) 
-                        for clearance holes at interfaces (strut to tank bulkhead and strut to fin) to allow for bonus tolerancing. I loved learning about how tolerancing and datum planes can be leveraged
-                        to convey the part's functional intent for machining! 
+                        Moreover, I created engineering drawings of the struts and fins with GD&T to convey tolerances and the functional intent
+                        for manufacturing. Upon feedback from peers, I implemented ordinate dimensions for hole positions and detailed views
+                        to improve the readibility of my drawings.
                     </p>
                 </div>
 
@@ -131,28 +115,28 @@
             <div class="project-div">
                 <div class="project-description-2"> 
                     <h3> Manufacturing </h3>
-                    <p> In the early stages of design, I accounted for endmill tool radius to mininmize spacing between the fin tab and panel mounting holes on the struts.
-                        To determine an optimal manufacturing strategy for the fins, I CNC machined 3 subscale fins to test different fixturing and probing approaches:-
+                    <p> 
+                        Machining the fin consisted of 2 operations, as the cross-section was diamond/wedge shaped (i.e leading and trailing edges 
+                        at opposite angle on other side of fin).
+                        To determine an optimal manufacturing strategy for the fins, I CNC machined <b> <span style="color: blanchedalmond"> 3 subscale fins 
+                        </span> </b>  to test different fixturing and probing approaches.
+                        Following are some of my learnings from this test campaign:-
                         
                         <ul class="bullet-points">
-                            <li> <p> &#x2022; <span style="color: blanchedalmond"> <b> Subscale fin #1: </b> </span> Machined slots on the first operation, 
-                                then flipped the stock and probed these slots to align the fin's front and back sides. Didn't achieve feature alignment,
-                                because of using a long 1/8" tool, which led to tool vibrations and deviation in slot geometry - affecting the probing operation.
-                                Bad surface finish on one face, because of using a large diameter face mill for second operation - where stock was not well supported
+                            <li> <p> &#x2022; Initially, I machined slots in the 1st operation to use as reference for locating the stock in the 2nd operation.
+                                I used a long tool holder for making the slots, which led to tool vibrations and deviation in the slot geometry -> affecting the probing
+                                in 2nd op.
                             </p> </li>
 
-                            <li> <p> &#x2022; <span style="color: blanchedalmond"> <b> Subscale fin #2: </b> </span> Dial indicated the slots to within 
-                                0.1 - 0.3 thousandth's of an inch, however, misalignment between front and back sides was still present. This might have between
-                                due to probe tip not contacting the same spot on the slot as first operation - could have been fixed in CAM. Validated no stock deflections
-                                when machining the leading and trailing edges (thin and tapered) with ball endmill.
+                            <li> <p> &#x2022; Using ID expansion pins that thread into a sacrificial plate below the stock provide great 
+                                <b> <span style="color: blanchedalmond">  positional and angular locating ability </span> </b> 
+                                for aligning features on the fin's two sides. Additionally, they ensure <b> <span style="color: blanchedalmond"> repeatibility </span> </b> 
+                                because of probing the sacrificial plate only once to machine 3 fins in one go.
                             </p> </li>
 
-                            <li> <p> &#x2022; <span style="color: blanchedalmond"> <b> Subscale fin #3: </b> </span> Implemented ID expansion pins, which thread into
-                                sacrificial plate, and clamp the stock by expanding. Adjusted tool diameter
-                                offset in machine console based on hole's inner diameter measurement after every pass, to achieve a locational clearance fit for ID expansion pin. 
-                                
-                                Achieved good feature alignment and only had to probe
-                                the sacrificial plate (fixed reference) once - great repeatibility for machining 3 flight scale fins in one go.
+                            <li> <p> &#x2022; Stock in the 2nd op. did not have the same rigidity as the 1st op, due to material removed in 1st op.
+                                Thus, choosing a smaller tool diameter reduced cutting forces and deflection of stock -> resulting in better surface finish. Additionally,
+                                reducing the tool's axial depth of cut led to smooth surface finish of the leading and trailing edges.
                             </p> </li>
                         </ul>                        
                     </p>

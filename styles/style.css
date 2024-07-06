@@ -275,6 +275,11 @@ figcaption{
     object-fit: contain;
 }
 
+.slender-img-2{
+    height: 330px;
+    object-fit: contain;
+}
+
 .strut-mesh-img{
     width: 380px;
     object-fit: contain;
@@ -420,7 +425,7 @@ figcaption{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px 40px 98px 35px;
+    padding: 15px 40px 160px 35px;
 }
 
 .project-div-2{
@@ -488,7 +493,6 @@ figcaption{
     justify-content: space-between;
     flex-flow: wrap;
     padding: 5px 0px 5px 0px;
-    gap: 5px;
 }
 
 .wind-tunnel-fig{
@@ -538,7 +542,6 @@ figcaption{
     justify-content: space-between;
     align-items: center;
     flex-flow: wrap;
-    padding: 90px 0px 0px 0px;
     gap: 50px;
 }
 
@@ -595,8 +598,7 @@ figcaption{
     align-items: center;
     justify-content: space-between;
     flex-flow: wrap;
-    padding: 20px 5px 5px 10px;
-    gap: 10px;
+    padding: 10px 5px 5px 10px;
 }
 
 
@@ -753,7 +755,7 @@ figcaption{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 0px 20px 190px 0px;
+        padding: 0px 20px 180px 0px;
         align-items: center;
     }
 
