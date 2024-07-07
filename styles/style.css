@@ -448,7 +448,7 @@ figcaption{
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 30px 86px 5px;
+    padding: 0px 30px 15px 5px;
 }
 
 .project-div-6{
@@ -492,7 +492,7 @@ figcaption{
     align-items: center;
     justify-content: space-between;
     flex-flow: wrap;
-    padding: 5px 0px 5px 0px;
+    padding: 0px 0px 5px 0px;
 }
 
 .wind-tunnel-fig{

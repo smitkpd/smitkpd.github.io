@@ -36,9 +36,10 @@
                                 drag force over test articles and compare with NACA charts. 
                             </p>
                         <h3> Design </h3>
-                            <p> <span style="color: blanchedalmond"> <b> Minimizing build cost </b> </span> and ensuring <span style="color: blanchedalmond"> <b> ease of transportation </b> </span> were the two main design constraints. I started by choosing the inlet's 
+                            <p> <span style="color: blanchedalmond"> <b> Minimizing build cost </b> </span> and ensuring <span style="color: blanchedalmond"> <b> ease of transportation </b> </span> 
+                                were the two main goals. I started by choosing the inlet's 
                                 contraction ratio, as this would drive the size of the test section and diffuser. I chose a <span style="color: blanchedalmond"> <b> 5:1 </b> </span> contraction ratio for 
-                                maximum airspeed inside the test section, with inlet dimensions constrained by cheaper stock. 
+                                maximum airspeed inside the test section, while keeping the inlet dimensions feasible to manufacture and transport.
                             </p>
                 </div>
 
@@ -57,16 +58,14 @@
 
             <div class="project-div-5">
                 <div class="project-description-2"> 
-                    <p> <span style="color: blanchedalmond"> <b>Inlet:</b> </span> Originally I designed a cone-shaped inlet, but then changed to a polynomial-curve shape for better flow characteristics.
-                        I cut out a 5th degree polynomial shape out of cardboard sheets with a laser cutter, and will epoxy them together to form the inlet contraction cone.
-                        Hinges will be used to remove the inlet and install test articles in the test section. To ensure <b> <span style="color: blanchedalmond"> laminar airflow, </span> </b> I plan to use 2-3 layers of 
-                        window mesh to break down turbulent eddies in the intake air. </p>
+                    <p> <span style="color: blanchedalmond"> <b>Inlet:</b> </span> Initially, I designed a cone-shaped inlet, but then changed to a polynomial-curve shape for a better aesthetic.
+                        I chose to join the test section to the inlet and diffuser with hinges to allow for disassembly for transportation. To ensure laminar airflow, I plan to use a wireframe mesh 
+                        to break down turbulent eddies in the intake air. </p>
 
-                    <p> <span style="color:  blanchedalmond"> <b>Test section:</b> </span> A sting arm protruding inside the test section will hold the test article. <b> <span style="color: blanchedalmond"> Load cells </span> </b> will be 
-                        connected to the sting arm for measuring lift and drag forces. </p>
-
-                    <p> <span style="color:  blanchedalmond"> <b>Diffuser:</b> </span> By increasing the area, the diffuser recovers pressure losses from high-speed flow in the test section, and prevents backflow of air. 
-                        It also contains the fan at the aft end, which pulls the intake air into the wind tunnel. </p>
+                    <p> <span style="color:  blanchedalmond"> <b>Sting arm:</b> </span> A sting arm protruding inside the test section both holds the test article, and changes its
+                        angle of attack (through a servo). To read lift and drag forces, I will etch strain gages (in a half-bridge configuration) and read the voltage
+                        using a custom PCB (for amplifying the input voltage) and an Arduino. This voltage will then be converted to a strain, from where I can obtain the forces.
+                    </p>
                 </div>
 
                 <div class="wind-tunnel-img-grid-2">
@@ -95,14 +94,22 @@
 
             <div class="project-div">
                 <div class="project-description"> 
-                    <h3> Manufacturing </h3>  
+                    <h3> Manufacturing and Assembly </h3>  
                         <p> I used a CNC Gantry router (at Purdue’s <a href="https://www.purdue.edu/bidc/" class="hyperlink" target="_blank"> 
-                            BIDC </a>) to machine the inlet, test section, diffuser and secondary support structure from Plywood.
-                            Then, I assembled the main sections using two part structural epoxy and wood screws.
+                            BIDC </a>) to machine the inlet, test section and diffuser from plywood.
+                            Then, I assembled the main sections using two part structural epoxy and wood screws. <br> <br>
 
-                            I cut out rectangles for the support structure on a table saw and screwed them to the bottom of the inlet, test section and diffuser. <br> <br>
-                            Next, I screwed a wireframe mesh to the front of the inlet, for breaking down incoming turbulent air to ensure laminar airflow inside the
-                            test section. To attach the cardboard sheets for the contraction cone, I used woodglue and clamped the sheets during the curing process.
+                            For the inlet contraction cone, I used a laser cutter to cut the shapes out of cardboard sheets. When assembling the sheets together,
+                            I realized I should have provided some <span style="color: blanchedalmond"> <b> relief length </b> </span> for the sheet to relax after being bent into a contour. Additionally, there was a gap
+                            between the sheets because they were all the same shape. I plan to make a 2nd iteration of the cone, using a flat pattern (from CAD model)
+                            to cut the inlet sheets. <br> <br>
+
+                            Initially, I chose to make the mounting arm from Aluminum,
+                            however, it would experience very small strains, due to a low wind tunnel velocity (~ 10 m/s). So, I decided to make
+                            the mounting arm from Delrin (plastic), which has a smaller Young's Modulus than Aluminum and some 3D printed plastics. 
+                            After making CAD in NX, I machined the mounting arm on a 3-Axis CNC mill.
+
+                            <!--After making CAD in NX, I machined the mounting arm on a 3-Axis CNC mill. Next, I tested it with my servo setup (fill this in later...)-->
                         </p>
                 </div>
 
@@ -119,34 +126,20 @@
                 </div>
             </div>
 
-            <div class="project-div">
-                <div class="project-description"> 
-                    <h3> Mounting arm design, and build <!--and integration--> </h3>  
-                        <p> The mounting arm can not only hold the test article in the test section, but also change its Angle of Attack using a servo. I also plan to
-                            etch strain gages on its surface to read lift and drag loads on the test article. Initially, I chose to make the mounting arm from Aluminum,
-                            however, it would experience very small strains, due to a small load from a slow test section velocity (~ 10 m/s). So, I decided to make
-                            the mounting arm from Delrin (plastic), which has a smaller Young's Modulus than Aluminum and some 3D printed plastics. 
-                            After making CAD in NX, I machined the mounting arm on a 3-Axis CNC mill.
-
-                            <!--After making CAD in NX, I machined the mounting arm on a 3-Axis CNC mill. Next, I tested it with my servo setup (fill this in later...)-->
-                        </p>
-                </div>
-
-                <div class="wind-tunnel-img-grid">
-                    <figure class="wind-tunnel-fig"> 
-                        <img src="images/wind-tunnel/mounting_arm_assem.png" class="project-img" alt="Assembly">
-                    </figure>
-
-                    <figure>
-                        <video controls="controls" width="480px" height="270px">
-                            <source src="images/wind-tunnel/IMG_0102.MOV" type="video/mp4" />
-                        </video>
-                        <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Milling Delrin mounting arm </figcaption>
-                    </figure>
-                </div>
-            </div>
-
             <div class="machining-img-grid-2">
+                
+                <!-- Following used "wind-tunnel-img-grid" initially-->
+                <figure class="wind-tunnel-fig"> 
+                    <img src="images/wind-tunnel/mounting_arm_pic.png" class="wind-tunnel-img" alt="Mounting arms">
+                </figure>
+
+                <figure>
+                    <video controls="controls" width="480px" height="270px">
+                        <source src="images/wind-tunnel/IMG_0102.MOV" type="video/mp4" />
+                    </video>
+                    <figcaption class="project-img-caption", style="color:  rgb(203, 198, 198)"> Milling Delrin mounting arm </figcaption>
+                </figure>
+
                 <figure> 
                     <video controls="controls" width="480px" height="270px">
                         <source src="images/wind-tunnel/IMG_0214.MOV" type="video/mp4" />
