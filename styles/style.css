@@ -598,13 +598,18 @@ figcaption{
     align-items: center;
     justify-content: space-between;
     flex-flow: wrap;
-    padding: 10px 5px 5px 10px;
+    padding: 10px 10px 5px 10px;
+    gap: 35px;
 }
 
 
 .project-description{
     margin-right: 30px;
     width: 42%;
+}
+
+.project-description-1{
+    width: 37%;
 }
 
 .project-description-2{

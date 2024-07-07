@@ -31,7 +31,8 @@
                     <h2 class="subtitle"> (Jan 2024 - Present) </h2>
 
                     <h3> Introduction </h3>
-                    <p> In Feb 2024, I became a <i> Manufacturing Teaching Assistant </i> at Purdue's BIDC. In this role, I consult students on CAM
+                    <p> In Feb 2024, I became a <i> Manufacturing Teaching Assistant </i> at Purdue's <a href="https://www.purdue.edu/bidc/" class="hyperlink" target="_blank"> 
+                        BIDC</a>. In this role, I consult students on CAM
                         and operating HAAS 3 and 5-Axis CNC mills and lathes for manufacturing parts. This page describes the challenges and lessons learned 
                         from making parts for Purdue Space Program's Liquid Rocket team.
                     </p>
@@ -39,14 +40,14 @@
                     <h3> Raceway Elbow Connector </h3>
                     <p> I created CAM and CNC machined a raceway elbow connector on a 5-Axis CNC mill. This part bolts to the lower tank bulkhead and houses one end of the raceway.
                         A challenging part of the machining process was determining the approach to clamping the part, since only
-                        one side had flat surfaces on opposite sides. I chose to machine the portion with the flat faces first (to use them as clamping surfaces later).
-                        However, I realized that milling out the slot would cause the part to deform under the clamping force of the vice. So, the slot
+                        one side had flat surfaces. I chose to machine this portion with the flat faces first (to use them as clamping surfaces later).
+                        However, I realized that milling out the slot caused the part to deform under the clamping force of the vice, due to the small wall thickness. So, the slot
                         was machined in the very end. <br> <br>
                         
                         For the angled bolt holes, I first bored out holes with the stock oriented at an angle to the endmill, then drilled the holes.
-                        This was to prevent the drill tip from deflecting/getting damaged, as the drill tip wouldn't be perpendicular to the stock.
+                        This was to prevent the drill tip from deflecting and getting damaged, as would be the case if the drill approached an inclined stock surface.
                         Moreover, I had to get creative with making sketches in CAD, to select specific contours for generating toolpaths in CAM. Lastly, upon feedback 
-                        from a teammate, I designed an Aluminum support structure that would be clamped in the vice, for milling out a slot.
+                        from a teammate, I designed an Aluminum support structure that would be clamped in the vice, for milling out the afore-mentioned slot.
                     </p>
                 </div>
                 
@@ -83,7 +84,7 @@
 
                 <figure> 
                     <img src="images/Lower raceway elbow/top_down_adaptive.png" class="project-img" alt="Toolpaths">
-                    <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> CAM toolpath for milling <br> the inside profile </figcaption>
+                    <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> CAM toolpath (using custom <br> sketch) for milling inside profile </figcaption>
                 </figure>
 
                 <figure> 
@@ -93,10 +94,10 @@
             </div>
 
             <div class="project-div"> 
-                <div class="project-description-3">
+                <div class="project-description-1">
                     <h3> Launch Lugs </h3>
                     <p>
-                        This was the first part where I operated a HAAS 3-Axis CNC mill entirely independently after getting trained. I machined the launch lugs
+                        This was the first part where I operated a HAAS 3-Axis CNC mill entirely independently. I machined the launch lugs
                         in two operations, one half at a time, due to tool length limitations. For my first attempt, I probed off the stock (unreliable
                         reference surface), leading to misalignment between the two halves. On my second attempt, I aligned the part with the vice's edge and probed
                         off the vice edge - which singificantly reduced feature misalignment. Major takeaway here was to always probe off a machined or precision 
@@ -108,6 +109,11 @@
                     <figure> 
                         <img src="images/Launch Lugs/launch_lugs_op1.JPG" class="slender-img" alt="OP1">
                         <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Operation 1 </figcaption>
+                    </figure>
+
+                    <figure> 
+                        <img src="images/Launch Lugs/misaligned_lug.jpg" class="slender-img" alt="Misaligned lug">
+                        <figcaption class="project-img-caption", style="color: rgb(203, 198, 198)"> Feature misalignment on first attempt </figcaption>
                     </figure>
 
                     <figure> 
