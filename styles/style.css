@@ -598,8 +598,8 @@ figcaption{
     align-items: center;
     justify-content: space-between;
     flex-flow: wrap;
-    padding: 10px 10px 5px 10px;
-    gap: 35px;
+    padding: 10px 10px 5px 5px;
+    gap: 30px;
 }
 
 
