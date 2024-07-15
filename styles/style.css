@@ -313,7 +313,7 @@ figcaption{
 }
 
 .project-img-4{
-    width: 435px;
+    width: 450px;
     object-fit: contain;
 }
 
@@ -492,7 +492,7 @@ figcaption{
     align-items: center;
     justify-content: space-between;
     flex-flow: wrap;
-    padding: 0px 0px 5px 0px;
+    padding: 40px 0px 5px 0px;
 }
 
 .wind-tunnel-fig{

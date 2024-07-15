@@ -32,15 +32,15 @@
                         <h3> Bolt hole stresses </h3>  
 
                         <!-- Elaborate description with bullet points -->
-                        <p> For the FEM of upper airframe struts, I improved the mesh and bolt contact modeling, as well as conducted a mesh convergence study.
-                            Sharp transitions of tetrahedral mesh elements at the bolt holes led to unrealistically high stresses, giving a Safety Margin less than zero. To resolve this,
-                            I refined the mesh around bolt holes using a Sphere of Influence. Additionally, I experimented with different bolt
-                            diameters and strut flange thicknesses to reduce stress concentrations. Lastly, I validated stress in vicinity of bolt holes with hand calculations.
+                        <p> For the FEM of upper airframe struts, I refined the mesh around bolt holes, while reducing element count to speed up mesh
+                            convergence studies. Sharp transitions of tetrahedral mesh elements at the bolt holes led to unrealistically high stresses. 
+                            To resolve this, I explored various meshing approaches (inflation layers, face sizing, etc.) and implemented a sphere of
+                            influence around bolt holes for mesh refinement. I validated stress in vicinity of bolt holes with hand calculations.
+                            Additionally, I iterated bolt diameter and strut flange thickness to meet Safety Margin requirements. 
                         </p>
                         <h3> Mesh convergence </h3>  
                         <p> To ensure FEA results were not biased on mesh density, I conducted a mesh convergence study. The plots show how Max Von Mises and bolt hole
-                            stresses converge to within +/- 500 psi. Although, the max Von Mises stress (40 kpsi) was above Yield Stress of Alumnium, we reasoned this was likely a FEA artifact
-                            due to coarse/abrupt distribution of nodes at the bolt hole rim. From this process, I learned how to efficiently manage computational expense, by having finer mesh in areas of high 
+                            stresses converge to within +/- 500 psi. I learned how to efficiently manage computational expense, by having finer mesh in areas of high 
                             stress concentrations, and relatively coarser mesh in other areas.
                         </p>
                 </div>
