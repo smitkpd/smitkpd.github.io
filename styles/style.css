@@ -704,7 +704,7 @@ figcaption{
     }
 
     .name{
-        font-size: 1.75em;
+        font-size: 2.6vh;
         padding-top: 20px
     }
 
@@ -722,7 +722,7 @@ figcaption{
         
     .list-items a{
         color: black;
-        font-size: 2.7vh;
+        font-size: 2.4vh;
     }
 
     .project-div{
