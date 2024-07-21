@@ -543,6 +543,7 @@ figcaption{
     align-items: center;
     flex-flow: wrap;
     gap: 50px;
+    padding-top: 45px;
 }
 
 
@@ -696,14 +697,14 @@ figcaption{
         box-sizing: border-box;
         padding: 7px 1.5vh 10px 30px;
         font-size: 0.85em;
-        color: grey;
+        color: rgba(193, 188, 188, 0.945);
         line-height: 1.5;
         margin-right: 70px;
         overflow-y: wrap;
     }
 
     .name{
-        font-size: 2.3vh;
+        font-size: 1.75em;
         padding-top: 20px
     }
 
@@ -721,7 +722,7 @@ figcaption{
         
     .list-items a{
         color: black;
-        font-size: 2vh;
+        font-size: 2.7vh;
     }
 
     .project-div{
@@ -896,10 +897,18 @@ figcaption{
     
 
     .project-description{
+        margin-left: 20px;
         margin-right: 0px;
         width: 105%;
         padding-bottom: 20px;
     }
+
+    .project-description-1{
+        margin-left: 20px;
+        margin-right: 0px;
+        width: 105%;
+        padding-bottom: 20px;
+    }    
     
     .project-description-2{
         margin-right: 0px;
