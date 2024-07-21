@@ -952,6 +952,11 @@ figcaption{
         margin-right: 25px;
     }
 
+    .machining-img{
+        width: 450px;
+        object-fit: contain;
+    }
+
     .strut-img{
         width: 320px;
     }
