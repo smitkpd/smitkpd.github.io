@@ -32,16 +32,17 @@
                     
                     <p>
                         At the Composites Manufacturing and Simulation Center (CMSC), I am designing, analyzing and conducting experiments to characterize temperature
-                        of 3D printed filament based on a heating coil embedded between filament layers. The objective is to provide localized heating in different regions 
+                        of 3D printed tooling based on a heating coil embedded between filament layers. The objective is to provide localized heating in different regions 
                         of the tooling for curing a composite part with varying thickness and thermal conductivity. <br> <br>
 
-                        Specifically, I am evaluating how various stretch factors of the heating coil affect the filament's temperature. I determined relations between
-                        coil resistance and applied strain, using Castigliano's theorem for spring deflection and resistance/inch from the coil's datasheet.
-                        Additionally, I wrote a Python script to plot coil temperature as a function of applied strain using 1D, steady-state heat transfer and surface energy balance. <br> <br>
+                        Specifically, I am evaluating how various <b> <span style="color: blanchedalmond"> stretch factors 
+                        </span> </b> of the heating coil affect the tool's temperature. I determined relations between
+                        coil resistance and applied strain, using Castigliano's theorem for spring deflection.
+                        Additionally, I wrote a <b> <span style="color: blanchedalmond"> Python script 
+                        </span> </b>Python script to plot coil temperature as a function of applied strain using 1D heat transfer hand calculations. <br> <br>
                         
                         To validate my hand calculations, I conducted an experiment where I passed current through the coil and measured its temperature for various strains, using
-                        a thermal camera. Next, I made a <b> <span style="color: blanchedalmond"> Python script 
-                        </span> </b>  to analyze thermal images and determine the coil's median temperature. Fig. 4 shows that the experimental data aligned
+                        a thermal camera. Fig. 4 shows that the experimental data aligned
                         well with the prediction, except a few outliers. One challenge was the lack of control on the lab's ventilation system, which could have changed the convection coefficient, thus coil temperature. 
                         To resolve this, I covered the coil under a cardboard box, however, it had an opening for the thermal camera, allowing the surrounding air currents to affect the coil's temperature and lead to outliers in Fig. 4.
                     </p>
